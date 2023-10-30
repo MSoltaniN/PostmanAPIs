@@ -8620,6 +8620,87 @@
 			"id": "e0fb60ea-0c28-4384-95d3-3a1f244e07f9"
 		},
 		{
+			"name": "attributes-sample",
+			"item": [
+				{
+					"name": "به روش آسنکرون، خصوصیت ها داده شده را - در صورت امکان - حذف می کند",
+					"id": "d5bae62f-945b-49df-ac40-492917252151",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"paraph\": \"<string>\",\n  \"items\": [\n    \"<integer>\",\n    \"<integer>\"\n  ]\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/attributes-test",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"attributes-test"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "bbfb8493-d6c0-4259-a2fa-a80c501bf912",
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"paraph\": \"<string>\",\n  \"items\": [\n    \"<integer>\",\n    \"<integer>\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/attributes-test",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"attributes-test"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			],
+			"id": "e0fb60ea-0c28-4384-95d3-3a1f244e07f9"
+		},
+		{
 			"name": "balancebyacc",
 			"item": [
 				{
