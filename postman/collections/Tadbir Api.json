@@ -9279,7 +9279,13 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "X-Tadbir-License",
+										"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
+										"type": "text"
+									}
+								],
 								"url": {
 									"raw": "{{baseUrl}}/brands/all",
 									"host": [
@@ -9332,7 +9338,13 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "X-Tadbir-License",
+										"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
+										"type": "text"
+									}
+								],
 								"url": {
 									"raw": "{{baseUrl}}/brands/inactive",
 									"host": [
@@ -9916,7 +9928,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"branchId\": \"<integer>\",\n  \"branchName\": \"<string>\",\n  \"enName\": \"<string>\",\n  \"description\": \"<string>\",\n  \"socialLink\": \"<string>\",\n  \"website\": \"<string>\",\n  \"metaKeyword\": \"<string>\",\n  \"state\": \"<string>\"\n}",
+							"raw": "{\n    \"branchId\": 1,\n    \"branchName\": null,\n    \"name\": \"اپل\",\n    \"enName\": \"apple\",\n    \"description\": \"برند لوازم دیجیتال\",\n    \"socialLink\": \"www.apple.com\",\n    \"website\": \"www.apple.com\",\n    \"metaKeyword\": \"apple\",\n    \"state\": \"Active\"\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
