@@ -9392,11 +9392,16 @@
 											{
 												"key": "Content-Type",
 												"value": "application/json"
+											},
+											{
+												"key": "X-Tadbir-License",
+												"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
+												"type": "text"
 											}
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"branchId\": \"<integer>\",\n  \"branchName\": \"<string>\",\n  \"enName\": \"<string>\",\n  \"description\": \"<string>\",\n  \"socialLink\": \"<string>\",\n  \"website\": \"<string>\",\n  \"metaKeyword\": \"<string>\",\n  \"state\": \"<string>\"\n}",
+											"raw": "{\n        \"branchId\": 1,\n        \"branchName\": null,\n        \"name\": \"سامسونگ\",\n        \"enName\": \"samsung\",\n        \"description\": \"برند لوازم دیجیتال\",\n        \"socialLink\": \"www.samsung.com\",\n        \"website\": \"www.samsung.com\",\n        \"metaKeyword\": \"samsung\",\n        \"state\": \"Inactive\",\n        \"rowNo\": 1,\n        \"id\": 1,\n        \"rowGuid\": \"060e105d-3467-4ea9-93df-dd92834a2e53\",\n        \"modifiedDate\": \"2023-10-31T18:30:51.2548495\"\n    }",
 											"options": {
 												"raw": {
 													"headerFamily": "json",
@@ -9417,7 +9422,7 @@
 											"variable": [
 												{
 													"key": "brandId",
-													"value": "<integer>",
+													"value": "1",
 													"description": "(Required) شناسه دیتابیسی برند مورد نظر برای غیرفعال کردن"
 												}
 											]
@@ -9842,7 +9847,18 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "X-Tadbir-License",
+								"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "{{baseUrl}}/brands",
 							"host": [
@@ -9891,6 +9907,11 @@
 							{
 								"key": "Content-Type",
 								"value": "application/json"
+							},
+							{
+								"key": "X-Tadbir-License",
+								"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -47786,11 +47807,48 @@
 			"id": "933bebbb-315e-4c54-a6a9-1db1515900c5"
 		}
 	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZ2l2ZW5fbmFtZSI6ImFkbWluIiwiVGFkYmlyQ29udGV4dCI6eyJJZCI6MSwiVXNlck5hbWUiOiJhZG1pbiIsIlBlcnNvbkZ1bGxOYW1lIjoiYWRtaW4iLCJDb25uZWN0aW9uIjpudWxsLCJDb21wYW55SWQiOjAsIkJyYW5jaElkIjowLCJGaXNjYWxQZXJpb2RJZCI6MCwiQ29tcGFueU5hbWUiOm51bGwsIkJyYW5jaE5hbWUiOm51bGwsIkZpc2NhbFBlcmlvZE5hbWUiOm51bGwsIkludmVudG9yeU1vZGUiOjAsIkxhc3RMb2dpbkRhdGUiOiIyMDIzLTEwLTMxVDE4OjE1OjIwLjA3NyIsIkxhbmd1YWdlIjpudWxsLCJSb2xlcyI6WzFdLCJQZXJtaXNzaW9ucyI6W119LCJuYmYiOjE2OTg3NjM1ODUsImV4cCI6MTY5OTM2ODM4NSwiaWF0IjoxNjk4NzYzNTg1LCJpc3MiOiJ0YWRiaXItYXBpIiwiYXVkIjoidGFkYmlyLWFwcCJ9.n7N9qP5cCmzPCs6AkpJxI2_imM2unzLO9_8_5VNSjVc",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "X-Tadbir-Authticket",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "6fc202e6-ad74-4f55-a237-1764f65c0052",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "cacf3d3b-b220-4df6-8814-4f43121cd545",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
 	"variable": [
 		{
-			"id": "ac5029af-835d-4738-95d4-e6c8ecfe4a97",
+			"id": "93aee4f8-247d-47e8-9b9f-1e67bd02b84d",
 			"key": "baseUrl",
-			"value": "/"
+			"value": "http://localhost:9995"
 		}
 	]
 }
