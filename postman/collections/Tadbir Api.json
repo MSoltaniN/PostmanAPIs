@@ -70,10 +70,12 @@
 																"method": "GET",
 																"header": [],
 																"url": {
-																	"raw": "{{baseUrl}}/accbook/account/:accountId/by-row/by-branch?from=<dateTime>&to=<dateTime>",
+																	"raw": "http://localhost:9995/accbook/account/:accountId/by-row/by-branch?from=<dateTime>&to=<dateTime>",
+																	"protocol": "http",
 																	"host": [
-																		"{{baseUrl}}"
+																		"localhost"
 																	],
+																	"port": "9995",
 																	"path": [
 																		"accbook",
 																		"account",
@@ -157,10 +159,12 @@
 														"method": "GET",
 														"header": [],
 														"url": {
-															"raw": "{{baseUrl}}/accbook/account/:accountId/by-row?from=<dateTime>&to=<dateTime>",
+															"raw": "http://localhost:9995/accbook/account/:accountId/by-row?from=<dateTime>&to=<dateTime>",
+															"protocol": "http",
 															"host": [
-																"{{baseUrl}}"
+																"localhost"
 															],
+															"port": "9995",
 															"path": [
 																"accbook",
 																"account",
@@ -250,10 +254,12 @@
 																"method": "GET",
 																"header": [],
 																"url": {
-																	"raw": "{{baseUrl}}/accbook/account/:accountId/voucher-sum/by-branch?from=<dateTime>&to=<dateTime>",
+																	"raw": "http://localhost:9995/accbook/account/:accountId/voucher-sum/by-branch?from=<dateTime>&to=<dateTime>",
+																	"protocol": "http",
 																	"host": [
-																		"{{baseUrl}}"
+																		"localhost"
 																	],
+																	"port": "9995",
 																	"path": [
 																		"accbook",
 																		"account",
@@ -337,10 +343,12 @@
 														"method": "GET",
 														"header": [],
 														"url": {
-															"raw": "{{baseUrl}}/accbook/account/:accountId/voucher-sum?from=<dateTime>&to=<dateTime>",
+															"raw": "http://localhost:9995/accbook/account/:accountId/voucher-sum?from=<dateTime>&to=<dateTime>",
+															"protocol": "http",
 															"host": [
-																"{{baseUrl}}"
+																"localhost"
 															],
+															"port": "9995",
 															"path": [
 																"accbook",
 																"account",
@@ -19515,9 +19523,19 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "X-Tadbir-License",
+										"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
 								"url": {
-									"raw": "{{baseUrl}}/images/:imageId",
+									"raw": "{{baseUrl}}/images/:imageId?imageId=1",
 									"host": [
 										"{{baseUrl}}"
 									],
@@ -19525,10 +19543,16 @@
 										"images",
 										":imageId"
 									],
+									"query": [
+										{
+											"key": "imageId",
+											"value": "1"
+										}
+									],
 									"variable": [
 										{
 											"key": "imageId",
-											"value": "<integer>",
+											"value": "6",
 											"description": "(Required) شناسه دیتابیسی عکس مورد نظر"
 										}
 									]
@@ -19676,7 +19700,7 @@
 									"variable": [
 										{
 											"key": "imageId",
-											"value": "<integer>",
+											"value": "1",
 											"description": "(Required) شناسه دیتابیسی عکس مورد نظر برای حذف"
 										}
 									]
@@ -19716,6 +19740,234 @@
 						}
 					],
 					"id": "af8ae95a-50ca-4dd3-ad24-fede3496ecad"
+				},
+				{
+					"name": "{imageName}",
+					"item": [
+						{
+							"name": "به روش آسنکرون، اطلاعات نمایشی عکس مشخص شده با شناسه دیتابیسی را خوانده و برمی گرداند",
+							"id": "6fe6c8e4-57b0-45c0-963f-1900d92250ab",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-Tadbir-License",
+										"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{baseUrl}}/images/:imageName?imageName='1699791401332y.jpg'",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"images",
+										":imageName"
+									],
+									"query": [
+										{
+											"key": "imageName",
+											"value": "'1699791401332y.jpg'"
+										}
+									],
+									"variable": [
+										{
+											"key": "imageName",
+											"value": "1699791401332y.jpg"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "46f3f588-dc8d-440c-bb49-7e15318e0bfa",
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/images/:imageId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"images",
+												":imageId"
+											],
+											"variable": [
+												{
+													"key": "imageId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "به روش آسنکرون، اطلاعات نمایشی اصلاح شده برای یک عکس موجود را پس از اعتبارسنجی در دیتابیس ذخیره می کند",
+							"id": "c4300f90-614b-477d-88aa-5a1e4738f4cc",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"originalName\": \"<string>\",\n  \"contentType\": \"<string>\",\n  \"fileSize\": \"<long>\",\n  \"file\": \"<string>\",\n  \"checkSum\": \"<string>\",\n  \"isActive\": \"<boolean>\",\n  \"imageWidth\": \"<integer>\",\n  \"imageHeight\": \"<integer>\",\n  \"thumbnail\": \"<string>\",\n  \"thumbnailWidth\": \"<integer>\",\n  \"thumbnailHeight\": \"<integer>\",\n  \"alternativeText\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/images/:imageId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"images",
+										":imageId"
+									],
+									"variable": [
+										{
+											"key": "imageId",
+											"value": "<integer>",
+											"description": "(Required) شناسه دیتابیسی عکس اصلاح شده"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "351e9596-2f25-4ba6-95dd-eabe2feca916",
+									"name": "Success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"originalName\": \"<string>\",\n  \"contentType\": \"<string>\",\n  \"fileSize\": \"<long>\",\n  \"file\": \"<string>\",\n  \"checkSum\": \"<string>\",\n  \"isActive\": \"<boolean>\",\n  \"imageWidth\": \"<integer>\",\n  \"imageHeight\": \"<integer>\",\n  \"thumbnail\": \"<string>\",\n  \"thumbnailWidth\": \"<integer>\",\n  \"thumbnailHeight\": \"<integer>\",\n  \"alternativeText\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/images/:imageId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"images",
+												":imageId"
+											],
+											"variable": [
+												{
+													"key": "imageId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "به روش آسنکرون، اطلاعات عکس مشخص شده با شناسه دیتابیسی را پس از اعتبارسنجی از دیتابیس حذف می کند",
+							"id": "f39ec28d-da25-463c-9ace-2c35c4eac7c5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/images/:imageId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"images",
+										":imageId"
+									],
+									"variable": [
+										{
+											"key": "imageId",
+											"value": "<integer>",
+											"description": "(Required) شناسه دیتابیسی عکس مورد نظر برای حذف"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "5c197ea5-ea1f-46bc-8878-13a228cae6aa",
+									"name": "Success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/images/:imageId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"images",
+												":imageId"
+											],
+											"variable": [
+												{
+													"key": "imageId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"id": "2dcd461a-bef5-43a3-9358-fecb18c234aa"
 				},
 				{
 					"name": "به روش آسنکرون، اطلاعات صفحه بندی شده عکس ها را خوانده و برمی گرداند",
@@ -19774,11 +20026,28 @@
 							{
 								"key": "Content-Type",
 								"value": "application/json"
+							},
+							{
+								"key": "X-Tadbir-License",
+								"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
+								"type": "text"
 							}
 						],
 						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"originalName\": \"<string>\",\n  \"contentType\": \"<string>\",\n  \"fileSize\": \"<long>\",\n  \"file\": \"<string>\",\n  \"checkSum\": \"<string>\",\n  \"isActive\": \"<boolean>\",\n  \"imageWidth\": \"<integer>\",\n  \"imageHeight\": \"<integer>\",\n  \"thumbnail\": \"<string>\",\n  \"thumbnailWidth\": \"<integer>\",\n  \"thumbnailHeight\": \"<integer>\",\n  \"alternativeText\": \"<string>\"\n}",
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
+									"src": "/C:/Users/Lenovo/Desktop/bmw.jpg"
+								},
+								{
+									"key": "alternativeText",
+									"value": "bmw logo picture",
+									"type": "text"
+								}
+							],
 							"options": {
 								"raw": {
 									"headerFamily": "json",
