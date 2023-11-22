@@ -19535,7 +19535,7 @@
 									"formdata": []
 								},
 								"url": {
-									"raw": "{{baseUrl}}/images/:imageId?imageId=1",
+									"raw": "{{baseUrl}}/images/:imageId",
 									"host": [
 										"{{baseUrl}}"
 									],
@@ -19546,13 +19546,14 @@
 									"query": [
 										{
 											"key": "imageId",
-											"value": "1"
+											"value": "1",
+											"disabled": true
 										}
 									],
 									"variable": [
 										{
 											"key": "imageId",
-											"value": "6",
+											"value": "18",
 											"description": "(Required) شناسه دیتابیسی عکس مورد نظر"
 										}
 									]
@@ -19700,7 +19701,7 @@
 									"variable": [
 										{
 											"key": "imageId",
-											"value": "1",
+											"value": "18",
 											"description": "(Required) شناسه دیتابیسی عکس مورد نظر برای حذف"
 										}
 									]
@@ -19764,24 +19765,33 @@
 									"formdata": []
 								},
 								"url": {
-									"raw": "{{baseUrl}}/images/:imageName?imageName='1699791401332y.jpg'",
+									"raw": "{{baseUrl}}/images?name=1700487281348h.jpg&SizeType=original&ResizeWidth=200&ResizeHeight=450&ResizeMode=boxpad",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
-										"images",
-										":imageName"
+										"images"
 									],
 									"query": [
 										{
-											"key": "imageName",
-											"value": "'1699791401332y.jpg'"
-										}
-									],
-									"variable": [
+											"key": "name",
+											"value": "1700487281348h.jpg"
+										},
 										{
-											"key": "imageName",
-											"value": "1699791401332y.jpg"
+											"key": "SizeType",
+											"value": "original"
+										},
+										{
+											"key": "ResizeWidth",
+											"value": "200"
+										},
+										{
+											"key": "ResizeHeight",
+											"value": "450"
+										},
+										{
+											"key": "ResizeMode",
+											"value": "boxpad"
 										}
 									]
 								}
@@ -20037,14 +20047,14 @@
 							"mode": "formdata",
 							"formdata": [
 								{
-									"key": "file",
+									"key": "imageFile",
 									"type": "file",
 									"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
-									"src": "/C:/Users/Lenovo/Desktop/bmw.jpg"
+									"src": "/C:/Users/Lenovo/Desktop/astonmartin.jpg"
 								},
 								{
 									"key": "alternativeText",
-									"value": "bmw logo picture",
+									"value": "ast box pad",
 									"type": "text"
 								}
 							],
@@ -20118,11 +20128,28 @@
 							{
 								"key": "Content-Type",
 								"value": "application/json"
+							},
+							{
+								"key": "X-Tadbir-License",
+								"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
+								"type": "text"
 							}
 						],
 						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"paraph\": \"<string>\",\n  \"items\": [\n    \"<integer>\",\n    \"<integer>\"\n  ]\n}",
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "imageFile",
+									"type": "file",
+									"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
+									"src": "/C:/Users/Lenovo/Desktop/benz-logo.jpg"
+								},
+								{
+									"key": "alternativeText",
+									"value": "benz",
+									"type": "text"
+								}
+							],
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -20131,12 +20158,19 @@
 							}
 						},
 						"url": {
-							"raw": "{{baseUrl}}/images",
+							"raw": "{{baseUrl}}/images/:imageId",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
-								"images"
+								"images",
+								":imageId"
+							],
+							"variable": [
+								{
+									"key": "imageId",
+									"value": "18"
+								}
 							]
 						}
 					},
@@ -43183,16 +43217,24 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "noauth"
+						},
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/json"
+							},
+							{
+								"key": "X-Tadbir-License",
+								"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
+								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"password\": \"<string>\",\n  \"personFullName\": \"<string>\",\n  \"userName\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"lastLoginDate\": \"<dateTime>\",\n  \"isEnabled\": \"<boolean>\"\n}",
+							"raw": "{\n  \"password\": \"Demo1234\",\n  \"personFullName\": \"<string>\",\n  \"userName\": \"admin\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"lastLoginDate\": \"<dateTime>\",\n  \"isEnabled\": \"<boolean>\"\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -48096,7 +48138,7 @@
 		"apikey": [
 			{
 				"key": "value",
-				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZ2l2ZW5fbmFtZSI6ImFkbWluIiwiVGFkYmlyQ29udGV4dCI6eyJJZCI6MSwiVXNlck5hbWUiOiJhZG1pbiIsIlBlcnNvbkZ1bGxOYW1lIjoiYWRtaW4iLCJDb25uZWN0aW9uIjoiR3hPWFpMRkRhLzZrWm55TWNhcUc0ME16N01BVzV3NkZzR0tpSFFwQzRQM0xOK3VRb2NQajVjVG9aakw5d21BaE1STndJWTUvM0F1V090UUlSN0JiZWFrWnludytxVjdXOHBKVElJWXlYM3EydzAzSjVjSmFnbHo4QkY1eHZZYUpXZkUxRFNXQWNmdTY1RXNXY1JmSVNtYnk1RG5HT200MjIwQ3J1M0ExcFpjbXphaVh2UlpZODBkRG5xcWdTS256aTF3Szc0WnBTV1JNRTJRRjdhU05iK2ZudEUvUkEvTGhQZWs5bzlydjl6S0pTZ09jeWVGd09nZEdvM3pNcUZnbkd5cHRkd0loRzdVYk1pdWpPR2JOclE9PSIsIkNvbXBhbnlJZCI6MSwiQnJhbmNoSWQiOjEsIkZpc2NhbFBlcmlvZElkIjowLCJDb21wYW55TmFtZSI6Iti02LHaqdiqINmG2YXZiNmG2YciLCJCcmFuY2hOYW1lIjoi2K_Zgdiq2LEg2YXYsdqp2LLbjCIsIkZpc2NhbFBlcmlvZE5hbWUiOm51bGwsIkludmVudG9yeU1vZGUiOjEsIkxhc3RMb2dpbkRhdGUiOiIyMDIzLTExLTEyVDE0OjI3OjE5IiwiTGFuZ3VhZ2UiOiJmYSIsIlJvbGVzIjpbMV0sIlBlcm1pc3Npb25zIjpbXX0sIm5iZiI6MTY5OTc4NzEzMCwiZXhwIjoxNzAwMzkxOTMwLCJpYXQiOjE2OTk3ODcxMzAsImlzcyI6InRhZGJpci1hcGkiLCJhdWQiOiJ0YWRiaXItYXBwIn0.f1g91WP8wCx6Ly85fpuSlGM8t7DeQg9mpL-HfpUmr4Y",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZ2l2ZW5fbmFtZSI6ImFkbWluIiwiVGFkYmlyQ29udGV4dCI6eyJJZCI6MSwiVXNlck5hbWUiOiJhZG1pbiIsIlBlcnNvbkZ1bGxOYW1lIjoiYWRtaW4iLCJDb25uZWN0aW9uIjpudWxsLCJDb21wYW55SWQiOjAsIkJyYW5jaElkIjowLCJGaXNjYWxQZXJpb2RJZCI6MCwiQ29tcGFueU5hbWUiOm51bGwsIkJyYW5jaE5hbWUiOm51bGwsIkZpc2NhbFBlcmlvZE5hbWUiOm51bGwsIkludmVudG9yeU1vZGUiOjAsIkxhc3RMb2dpbkRhdGUiOiIyMDIzLTExLTIwVDE2OjM3OjI5Ljg1NyIsIkxhbmd1YWdlIjpudWxsLCJSb2xlcyI6WzFdLCJQZXJtaXNzaW9ucyI6W119LCJuYmYiOjE3MDA0ODYyOTYsImV4cCI6MTcwMTA5MTA5NiwiaWF0IjoxNzAwNDg2Mjk2LCJpc3MiOiJ0YWRiaXItYXBpIiwiYXVkIjoidGFkYmlyLWFwcCJ9.nFnOvLvqh5unrulkXC206uyeqcnY4fhv6HqpEyXk8Zc",
 				"type": "string"
 			},
 			{
@@ -48110,7 +48152,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "cfc3a8bf-8c2f-4353-a642-bd8a468f58fc",
+				"id": "95fee039-2c7f-4fed-b4f5-05f7aff5dced",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -48120,7 +48162,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "0bc2603b-ec52-4656-b6e2-3512d81f74cb",
+				"id": "524a925f-412e-4350-b609-65d1a7d32c72",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -48130,7 +48172,7 @@
 	],
 	"variable": [
 		{
-			"id": "f5af0635-576b-4110-85cf-467908553fc2",
+			"id": "c93e6062-d00d-45c6-a4bc-0ceeb77e45cb",
 			"key": "baseUrl",
 			"value": "http://localhost:9995"
 		}
