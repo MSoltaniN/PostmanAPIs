@@ -8578,6 +8578,420 @@
 							"id": "99ac6258-367e-4325-8a0b-670cc25b4e8c"
 						},
 						{
+							"name": "property-groups",
+							"item": [
+								{
+									"name": "{propertyGroupId}",
+									"item": [
+										{
+											"name": "به روش آسنکرون، اطلاعات نمایشی گروه ویژگی مشخص شده با شناسه دیتابیسی را خوانده و برمی گرداند",
+											"id": "4cf02ce1-8672-4cea-b020-342cdb01a5d1",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/property-groups/:propertyGroupId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"property-groups",
+														":propertyGroupId"
+													],
+													"variable": [
+														{
+															"key": "propertyGroupId",
+															"value": "<integer>",
+															"description": "(Required) شناسه دیتابیسی گروه ویژگی مورد نظر"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "3cc61e27-cd11-4cd7-83a1-aa2a78e51678",
+													"name": "Success",
+													"originalRequest": {
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/property-groups/:propertyGroupId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"property-groups",
+																":propertyGroupId"
+															],
+															"variable": [
+																{
+																	"key": "propertyGroupId"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										},
+										{
+											"name": "به روش آسنکرون، اطلاعات نمایشی اصلاح شده برای یک گروه ویژگی موجود را پس از اعتبارسنجی در دیتابیس ذخیره می کند",
+											"id": "90ba9808-443c-4437-b0c7-7b78445dfdd9",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"enName\": \"<string>\",\n  \"description\": \"<string>\",\n  \"branchScope\": \"<integer>\",\n  \"createdById\": \"<integer>\",\n  \"modifiedById\": \"<integer>\",\n  \"createdByName\": \"<string>\",\n  \"modifiedByName\": \"<string>\",\n  \"createdDate\": \"<dateTime>\",\n  \"state\": \"<string>\",\n  \"fiscalPeriodId\": \"<integer>\",\n  \"branchId\": \"<integer>\",\n  \"fiscalPeriodName\": \"<string>\",\n  \"branchName\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/property-groups/:propertyGroupId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"property-groups",
+														":propertyGroupId"
+													],
+													"variable": [
+														{
+															"key": "propertyGroupId",
+															"value": "<integer>",
+															"description": "(Required) شناسه دیتابیسی گروه ویژگی اصلاح شده"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "24d53427-52c9-4093-bce9-1d2adf191390",
+													"name": "Success",
+													"originalRequest": {
+														"method": "PUT",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"enName\": \"<string>\",\n  \"description\": \"<string>\",\n  \"branchScope\": \"<integer>\",\n  \"createdById\": \"<integer>\",\n  \"modifiedById\": \"<integer>\",\n  \"createdByName\": \"<string>\",\n  \"modifiedByName\": \"<string>\",\n  \"createdDate\": \"<dateTime>\",\n  \"state\": \"<string>\",\n  \"fiscalPeriodId\": \"<integer>\",\n  \"branchId\": \"<integer>\",\n  \"fiscalPeriodName\": \"<string>\",\n  \"branchName\": \"<string>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{baseUrl}}/property-groups/:propertyGroupId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"property-groups",
+																":propertyGroupId"
+															],
+															"variable": [
+																{
+																	"key": "propertyGroupId"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										},
+										{
+											"name": "به روش آسنکرون، اطلاعات گروه ویژگی مشخص شده با شناسه دیتابیسی را پس از اعتبارسنجی از دیتابیس حذف می کند",
+											"id": "aa1b2f51-7c72-4862-9180-651de2ec2afd",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/property-groups/:propertyGroupId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"property-groups",
+														":propertyGroupId"
+													],
+													"variable": [
+														{
+															"key": "propertyGroupId",
+															"value": "<integer>",
+															"description": "(Required) شناسه دیتابیسی گروه ویژگی مورد نظر برای حذف"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "f3db2766-3fb9-41c5-bb99-fe61607ca1d8",
+													"name": "Success",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/property-groups/:propertyGroupId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"property-groups",
+																":propertyGroupId"
+															],
+															"variable": [
+																{
+																	"key": "propertyGroupId"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									],
+									"id": "1a4f2ce4-d093-4ddd-ba22-4d7e2a552376"
+								},
+								{
+									"name": "به روش آسنکرون، اطلاعات صفحه بندی شده گروه های ویژگی را خوانده و برمی گرداند",
+									"id": "401d9de8-17fe-42fc-ac0f-56eec302d3ec",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/property-groups",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"property-groups"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "fb4171c6-72d3-4c20-ab5b-55b3514da04b",
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/property-groups",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"property-groups"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "به روش آسنکرون، اطلاعات نمایشی یک گروه ویژگی جدید را پس از اعتبارسنجی در دیتابیس ذخیره می کند",
+									"id": "7b4a4f23-2e96-42a2-9c2f-19821ca59155",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"enName\": \"<string>\",\n  \"description\": \"<string>\",\n  \"branchScope\": \"<integer>\",\n  \"createdById\": \"<integer>\",\n  \"modifiedById\": \"<integer>\",\n  \"createdByName\": \"<string>\",\n  \"modifiedByName\": \"<string>\",\n  \"createdDate\": \"<dateTime>\",\n  \"state\": \"<string>\",\n  \"fiscalPeriodId\": \"<integer>\",\n  \"branchId\": \"<integer>\",\n  \"fiscalPeriodName\": \"<string>\",\n  \"branchName\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/property-groups",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"property-groups"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "f447d94d-8a86-4528-b92a-9a16c4108e86",
+											"name": "Success",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"enName\": \"<string>\",\n  \"description\": \"<string>\",\n  \"branchScope\": \"<integer>\",\n  \"createdById\": \"<integer>\",\n  \"modifiedById\": \"<integer>\",\n  \"createdByName\": \"<string>\",\n  \"modifiedByName\": \"<string>\",\n  \"createdDate\": \"<dateTime>\",\n  \"state\": \"<string>\",\n  \"fiscalPeriodId\": \"<integer>\",\n  \"branchId\": \"<integer>\",\n  \"fiscalPeriodName\": \"<string>\",\n  \"branchName\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/property-groups",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"property-groups"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "به روش آسنکرون، گروه های ویژگی داده شده را - در صورت امکان - حذف می کند",
+									"id": "b262e28c-77fb-4738-953e-82bc39e34e08",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"paraph\": \"<string>\",\n  \"items\": [\n    \"<integer>\",\n    \"<integer>\"\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/property-groups",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"property-groups"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "b15beaef-e94e-4ece-a175-562791a4e1c9",
+											"name": "Success",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"paraph\": \"<string>\",\n  \"items\": [\n    \"<integer>\",\n    \"<integer>\"\n  ]\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/property-groups",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"property-groups"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "ae0dd5a8-7d97-4a0b-885c-15a7b60d6134"
+						},
+						{
 							"name": "roles",
 							"item": [
 								{
