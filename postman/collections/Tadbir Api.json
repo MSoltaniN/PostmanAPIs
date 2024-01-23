@@ -8028,7 +8028,13 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "X-Tadbir-License",
+								"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "{{baseUrl}}/attributes",
 							"host": [
@@ -8077,11 +8083,16 @@
 							{
 								"key": "Content-Type",
 								"value": "application/json"
+							},
+							{
+								"key": "X-Tadbir-License",
+								"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
+								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"branchId\": \"<integer>\",\n  \"branchName\": \"<string>\",\n  \"enName\": \"<string>\",\n  \"description\": \"<string>\",\n  \"type\": \"<integer>\",\n  \"isActive\": \"<boolean>\"\n}",
+							"raw": "{\n  \"name\": \"رنگ\",\n  \"branchId\": 1,\n  \"fiscalPeriodId\":1,\n  \"enName\": \"color\",\n  \"description\": \"desc\",\n  \"Type\": \"\",\n  \"State\": \"\"\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -8152,11 +8163,16 @@
 							{
 								"key": "Content-Type",
 								"value": "application/json"
+							},
+							{
+								"key": "X-Tadbir-License",
+								"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
+								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"paraph\": \"<string>\",\n  \"items\": [\n    \"<integer>\",\n    \"<integer>\"\n  ]\n}",
+							"raw": "{\n  \"paraph\": \"حذف\",\n  \"items\": [\n    \"1\"\n  ]\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -36368,7 +36384,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"branchId\": \"<integer>\",\n  \"branchName\": \"<string>\",\n  \"enName\": \"<string>\",\n  \"description\": \"<string>\",\n  \"type\": \"<integer>\",\n  \"prefix\": \"<string>\",\n  \"suffix\": \"<string>\",\n  \"state\": \"<string>\"\n}",
+							"raw": "{\n  \"name\": \"اندازه رم\",\n  \"enName\": \"ram size\",\n  \"description\": \"توضیح\",\n \"type\": \"متنی\",\n  \"prefix\": \"RAM\",\n  \"suffix\": \"\",\n  \"fiscalPeriodId\": 1,\n  \"branchId\": 1\n}\n{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"branchId\": \"<integer>\",\n  \"branchName\": \"<string>\",\n  \"enName\": \"<string>\",\n  \"description\": \"<string>\",\n  \"type\": \"<integer>\",\n  \"prefix\": \"<string>\",\n  \"suffix\": \"<string>\",\n  \"state\": \"<string>\"\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -36519,21 +36535,26 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "X-Tadbir-License",
+										"value": "oMaT7fVPc/RevH8BgZQ56kEuYWOpsfKVTYRiaiiFsn22akN9movMJ/VHagneTLVj67OSnQebTpFMPaY/BSex+VwsscWqS/pSMtNGSnDDYxMRzD15JjQNLkyq1Ttw+4whvBmoizkEU4rmT/zx89VnPyzAw9XW/JcHsw7Uq6VxpJRu3dCLsSQylQhiBqc/wYQNRSlru4/qiXmQJjCBv/xzMYP9i4/RqesR2kpci8vDBcFBGkzRj77lWePdsHZ6eDZRjL5edC56rtVs2bbW4EQhW82wa3eC6k4yV1BKfaBsB3+SgyB8lYzigEEN2h0LFzM6oGwN2zwsh5zTFv+ipBRGhg==",
+										"type": "text"
+									}
+								],
 								"url": {
-									"raw": "{{baseUrl}}/property-groups/:propertyGroupId",
+									"raw": "{{baseUrl}}/property-groups/?propertyGroupId=2",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
 										"property-groups",
-										":propertyGroupId"
+										""
 									],
-									"variable": [
+									"query": [
 										{
 											"key": "propertyGroupId",
-											"value": "<integer>",
-											"description": "(Required) شناسه دیتابیسی گروه ویژگی مورد نظر"
+											"value": "2"
 										}
 									]
 								}
@@ -36579,11 +36600,16 @@
 									{
 										"key": "Content-Type",
 										"value": "application/json"
+									},
+									{
+										"key": "X-Tadbir-License",
+										"value": "oMaT7fVPc/RevH8BgZQ56kEuYWOpsfKVTYRiaiiFsn22akN9movMJ/VHagneTLVj67OSnQebTpFMPaY/BSex+VwsscWqS/pSMtNGSnDDYxMRzD15JjQNLkyq1Ttw+4whvBmoizkEU4rmT/zx89VnPyzAw9XW/JcHsw7Uq6VxpJRu3dCLsSQylQhiBqc/wYQNRSlru4/qiXmQJjCBv/xzMYP9i4/RqesR2kpci8vDBcFBGkzRj77lWePdsHZ6eDZRjL5edC56rtVs2bbW4EQhW82wa3eC6k4yV1BKfaBsB3+SgyB8lYzigEEN2h0LFzM6oGwN2zwsh5zTFv+ipBRGhg==",
+										"type": "text"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"enName\": \"<string>\",\n  \"description\": \"<string>\",\n  \"branchScope\": \"<integer>\",\n  \"createdById\": \"<integer>\",\n  \"modifiedById\": \"<integer>\",\n  \"createdByName\": \"<string>\",\n  \"modifiedByName\": \"<string>\",\n  \"createdDate\": \"<dateTime>\",\n  \"state\": \"<string>\",\n  \"fiscalPeriodId\": \"<integer>\",\n  \"branchId\": \"<integer>\",\n  \"fiscalPeriodName\": \"<string>\",\n  \"branchName\": \"<string>\"\n}",
+									"raw": "{\n  \"name\": \"گروه یک\",\n  \"enName\": \"group 1\",\n  \"description\": \"توضیح\",\n  \"fiscalPeriodId\": 1,\n  \"branchId\": 1\n}",
 									"options": {
 										"raw": {
 											"headerFamily": "json",
@@ -36592,19 +36618,17 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseUrl}}/property-groups/:propertyGroupId",
+									"raw": "{{baseUrl}}/property-groups?PropertyGroupId=1",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
-										"property-groups",
-										":propertyGroupId"
+										"property-groups"
 									],
-									"variable": [
+									"query": [
 										{
-											"key": "propertyGroupId",
-											"value": "<integer>",
-											"description": "(Required) شناسه دیتابیسی گروه ویژگی اصلاح شده"
+											"key": "PropertyGroupId",
+											"value": "1"
 										}
 									]
 								}
@@ -36661,22 +36685,21 @@
 							},
 							"request": {
 								"method": "DELETE",
-								"header": [],
+								"header": [
+									{
+										"key": "X-Tadbir-License",
+										"value": "oMaT7fVPc/RevH8BgZQ56kEuYWOpsfKVTYRiaiiFsn22akN9movMJ/VHagneTLVj67OSnQebTpFMPaY/BSex+VwsscWqS/pSMtNGSnDDYxMRzD15JjQNLkyq1Ttw+4whvBmoizkEU4rmT/zx89VnPyzAw9XW/JcHsw7Uq6VxpJRu3dCLsSQylQhiBqc/wYQNRSlru4/qiXmQJjCBv/xzMYP9i4/RqesR2kpci8vDBcFBGkzRj77lWePdsHZ6eDZRjL5edC56rtVs2bbW4EQhW82wa3eC6k4yV1BKfaBsB3+SgyB8lYzigEEN2h0LFzM6oGwN2zwsh5zTFv+ipBRGhg==",
+										"type": "text"
+									}
+								],
 								"url": {
-									"raw": "{{baseUrl}}/property-groups/:propertyGroupId",
+									"raw": "{{baseUrl}}/property-groups/1",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
 										"property-groups",
-										":propertyGroupId"
-									],
-									"variable": [
-										{
-											"key": "propertyGroupId",
-											"value": "<integer>",
-											"description": "(Required) شناسه دیتابیسی گروه ویژگی مورد نظر برای حذف"
-										}
+										"1"
 									]
 								}
 							},
@@ -36720,7 +36743,13 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "X-Tadbir-License",
+								"value": "oMaT7fVPc/RevH8BgZQ56kEuYWOpsfKVTYRiaiiFsn22akN9movMJ/VHagneTLVj67OSnQebTpFMPaY/BSex+VwsscWqS/pSMtNGSnDDYxMRzD15JjQNLkyq1Ttw+4whvBmoizkEU4rmT/zx89VnPyzAw9XW/JcHsw7Uq6VxpJRu3dCLsSQylQhiBqc/wYQNRSlru4/qiXmQJjCBv/xzMYP9i4/RqesR2kpci8vDBcFBGkzRj77lWePdsHZ6eDZRjL5edC56rtVs2bbW4EQhW82wa3eC6k4yV1BKfaBsB3+SgyB8lYzigEEN2h0LFzM6oGwN2zwsh5zTFv+ipBRGhg==",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "{{baseUrl}}/property-groups",
 							"host": [
@@ -36766,11 +36795,16 @@
 							{
 								"key": "Content-Type",
 								"value": "application/json"
+							},
+							{
+								"key": "X-Tadbir-License",
+								"value": "oMaT7fVPc/RevH8BgZQ56kEuYWOpsfKVTYRiaiiFsn22akN9movMJ/VHagneTLVj67OSnQebTpFMPaY/BSex+VwsscWqS/pSMtNGSnDDYxMRzD15JjQNLkyq1Ttw+4whvBmoizkEU4rmT/zx89VnPyzAw9XW/JcHsw7Uq6VxpJRu3dCLsSQylQhiBqc/wYQNRSlru4/qiXmQJjCBv/xzMYP9i4/RqesR2kpci8vDBcFBGkzRj77lWePdsHZ6eDZRjL5edC56rtVs2bbW4EQhW82wa3eC6k4yV1BKfaBsB3+SgyB8lYzigEEN2h0LFzM6oGwN2zwsh5zTFv+ipBRGhg==",
+								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"enName\": \"<string>\",\n  \"description\": \"<string>\",\n  \"branchScope\": \"<integer>\",\n  \"createdById\": \"<integer>\",\n  \"modifiedById\": \"<integer>\",\n  \"createdByName\": \"<string>\",\n  \"modifiedByName\": \"<string>\",\n  \"createdDate\": \"<dateTime>\",\n  \"state\": \"<string>\",\n  \"fiscalPeriodId\": \"<integer>\",\n  \"branchId\": \"<integer>\",\n  \"fiscalPeriodName\": \"<string>\",\n  \"branchName\": \"<string>\"\n}",
+							"raw": "{\n  \"name\": \"گروه یک\",\n  \"enName\": \"group1\",\n  \"description\": \"توضیح\",\n  \"fiscalPeriodId\": 1,\n  \"branchId\": 1\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -43807,7 +43841,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"branchId\": \"1\",\n  \"companyId\": \"1\",\n  \"fiscalPeriodId\": \"0\",\n  \"userId\": \"1\"\n\n}",
+											"raw": "{\n  \"branchId\": \"1\",\n  \"companyId\": \"2\",\n  \"fiscalPeriodId\": \"1\",\n  \"userId\": \"1\"\n\n}",
 											"options": {
 												"raw": {
 													"headerFamily": "json",
@@ -49020,7 +49054,7 @@
 		"apikey": [
 			{
 				"key": "value",
-				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZ2l2ZW5fbmFtZSI6ImFkbWluIiwiVGFkYmlyQ29udGV4dCI6eyJJZCI6MSwiVXNlck5hbWUiOiJhZG1pbiIsIlBlcnNvbkZ1bGxOYW1lIjoiYWRtaW4iLCJDb25uZWN0aW9uIjoiNnpJUjZ6M005T01YMDlBclpnbFgrblNha1llU0U2RnBMTGY2Z3VpUXU0REU5VHpiUjhHT0NBYU55eGNNbUNlYTdYTVJlUGF1eVh3aTBKc0NhZkNDcmtkRUY1RlNORkNrMytBSUhsSm9YeHhFcXR6T2FqdGRzMS9yMElqOGE5U1Bqc1FrWndRd3lqQmozaHlpc2l5b0xERXRJeGxyWUlLU1dFMGU5Y21qbE9aN3pEbERtNTNQc3dzbUJXY2FoenZXUFJKTmFDUlI3dTBIa1p5bXlDUkM3SU5nWjBTNDZKZWpHTmFqM0FwQTN6dXFRZnNSR2hXUkdYdGhqZnBBLzlKY1l1N1RCVHoxaGVQTlF3Sm9VeUFKc1E9PSIsIkNvbXBhbnlJZCI6MSwiQnJhbmNoSWQiOjEsIkZpc2NhbFBlcmlvZElkIjowLCJDb21wYW55TmFtZSI6Iti02LHaqdiqINmG2YXZiNmG2YciLCJCcmFuY2hOYW1lIjoi2K_Zgdiq2LEg2YXYsdqp2LLbjCIsIkZpc2NhbFBlcmlvZE5hbWUiOm51bGwsIkludmVudG9yeU1vZGUiOjEsIkxhc3RMb2dpbkRhdGUiOiIyMDIzLTExLTIxVDE1OjUzOjE2LjU3IiwiTGFuZ3VhZ2UiOiJmYSIsIlJvbGVzIjpbMV0sIlBlcm1pc3Npb25zIjpbXX0sIm5iZiI6MTcwMDY0NDI1NywiZXhwIjoxNzAxMjQ5MDU3LCJpYXQiOjE3MDA2NDQyNTcsImlzcyI6InRhZGJpci1hcGkiLCJhdWQiOiJ0YWRiaXItYXBwIn0.Xf9pWLJT3LspzLSJCMqrwDDten1e1z8snfrypTizkQE",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZ2l2ZW5fbmFtZSI6Itix2KfZh9io2LEg2LPbjNiz2KrZhSIsIlRhZGJpckNvbnRleHQiOnsiSWQiOjEsIlVzZXJOYW1lIjoiYWRtaW4iLCJQZXJzb25GdWxsTmFtZSI6Itix2KfZh9io2LEg2LPbjNiz2KrZhSIsIkNvbm5lY3Rpb24iOiJDZUtITkNLVnBsZkR1N3NSK2tjZitrY0FCT3FpMytRcFBGZmNQUXg1NkdPaVVBaDNyUXo0TCtSMTJVYjRpb3didVdJVXgxT0YzWEozbWpmYjE5cWJyckhJYWM1dTZobWJ6aFQrNG0zS3RnSG1qVlFZbFhWQWtpQmtzS0lsODVSMlNjNzJtRVRHak5FVC9QazdaRkppL0VnWGZGbnAyVzNPKzVSajd2QTgvd3JVb2R2UkM4akV1VUE5R2Z4N2NvSVVWL3pFV0U0RnNPWmM0NmhZSzJ0K2FXTm82d2FiUXNQUGpEeFN3bkdIblRtSS80NHBLc2NYaHpUUll2THlDc0tuVklvZkNZRHk0N09ZTWFEZFNYK0pwQT09IiwiQ29tcGFueUlkIjoyLCJCcmFuY2hJZCI6MSwiRmlzY2FsUGVyaW9kSWQiOjEsIkNvbXBhbnlOYW1lIjoi2K_Zgdiq2LEg2YXYsdqp2LLbjCIsIkJyYW5jaE5hbWUiOiIiLCJGaXNjYWxQZXJpb2ROYW1lIjoiIiwiSW52ZW50b3J5TW9kZSI6MSwiTGFzdExvZ2luRGF0ZSI6IjIwMjQtMDEtMjBUMTM6MjY6NTcuNjIzIiwiTGFuZ3VhZ2UiOiJmYSIsIlJvbGVzIjpbMV0sIlBlcm1pc3Npb25zIjpbXX0sIm5iZiI6MTcwNTc2MjI5NiwiZXhwIjoxNzA2MzY3MDk2LCJpYXQiOjE3MDU3NjIyOTYsImlzcyI6InRhZGJpci1hcGkiLCJhdWQiOiJ0YWRiaXItYXBwIn0.G2qxRggU--kHATJ3pcQj71HST8tzygogzjQkduzItCY",
 				"type": "string"
 			},
 			{
@@ -49034,7 +49068,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "d8d7ca01-9d2b-407e-bbfe-2cd62196e676",
+				"id": "17d25c3f-2da9-4558-8076-692ee313fcd9",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -49044,7 +49078,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "e7c52aea-a4b4-4ada-a291-cd6b5c202672",
+				"id": "7853f84d-80d5-47f8-b1a5-24da1138d2ac",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -49054,7 +49088,7 @@
 	],
 	"variable": [
 		{
-			"id": "06ffdc67-e5c7-4ff7-a317-fe58cc0e3567",
+			"id": "19e53afb-04e3-4617-9aee-f25c6b36db0b",
 			"key": "baseUrl",
 			"value": "http://localhost:9995"
 		}
