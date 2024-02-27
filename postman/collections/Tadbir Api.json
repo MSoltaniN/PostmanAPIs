@@ -30296,6 +30296,1022 @@
 			"id": "90c57e09-f0a8-42f3-91a5-02aa455d82d4"
 		},
 		{
+			"name": "categories",
+			"item": [
+				{
+					"name": "inactive",
+					"item": [
+						{
+							"name": "به روش آسنکرون، اطلاعات صفحه بندی شده کلیه دسته بندی‌های غیر فعال را خوانده و برمی گرداند",
+							"id": "e960e9f6-49ae-401b-a619-95d127ce2b90",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/categories/inactive",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories",
+										"inactive"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "9fe19902-1e46-4f7a-af81-89c7247d964e",
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/categories/inactive",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categories",
+												"inactive"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"id": "41eaadcd-e331-477e-b594-21d0088e9c04"
+				},
+				{
+					"name": "all",
+					"item": [
+						{
+							"name": "به روش آسنکرون، اطلاعات صفحه بندی شده کلیه دسته بندی‌ها را خوانده و برمی گرداند",
+							"id": "96f7a88e-dc7c-4bc3-8e5f-88c0c6c4d853",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/categories/all",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories",
+										"all"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "9ee9d0a9-0ea8-4812-9f94-51a4c7853486",
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/categories/all",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categories",
+												"all"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"id": "50f31bc5-7eb1-400e-8e33-eff65a412898"
+				},
+				{
+					"name": "treeview",
+					"item": [
+						{
+							"name": "به روش آسنکرون، اطلاعات نمای درختی کلیه دسته بندی‌ها را خوانده و برمی گرداند",
+							"id": "98c5f01e-8c0e-476c-bb62-2a56774a95c3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/categories/treeview",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories",
+										"treeview"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "e2a29bef-d458-4eef-9a4c-a58254e72e42",
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/categories/treeview",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categories",
+												"treeview"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"id": "2a4cb27f-1c41-4e06-865c-cf75e492cbdd"
+				},
+				{
+					"name": "{categoryId}",
+					"item": [
+						{
+							"name": "children",
+							"item": [
+								{
+									"name": "new",
+									"item": [
+										{
+											"name": "به روش آسنکرون، دسته بندی جدیدی زیرمجموعه دسته بندی والد داده شده برمی گرداند",
+											"id": "2c095923-8c55-45a3-bb13-87cd7fb59ebd",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/categories/:categoryId/children/new",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"categories",
+														":categoryId",
+														"children",
+														"new"
+													],
+													"variable": [
+														{
+															"key": "categoryId",
+															"value": "<integer>",
+															"description": "(Required) شناسه دیتابیسی دسته بندی والد"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "b88dcd11-f39f-462d-a071-56907e990b50",
+													"name": "Success",
+													"originalRequest": {
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/categories/:categoryId/children/new",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"categories",
+																":categoryId",
+																"children",
+																"new"
+															],
+															"variable": [
+																{
+																	"key": "categoryId"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									],
+									"id": "72a7cea2-f274-4959-8974-47849b8b1d47"
+								},
+								{
+									"name": "به روش آسنکرون، کلیه دسته بندی های زیرمجموعه دسته بندی داده شده را برمی گرداند",
+									"id": "52b918c6-f846-46ef-bf42-e940b503ab4f",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/categories/:categoryId/children",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categories",
+												":categoryId",
+												"children"
+											],
+											"variable": [
+												{
+													"key": "categoryId",
+													"value": "<integer>",
+													"description": "(Required) شناسه دیتابیسی دسته بندی والد"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "8a9e6bc5-64ae-4bab-89cf-1223ea6bf57f",
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/categories/:categoryId/children",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"categories",
+														":categoryId",
+														"children"
+													],
+													"variable": [
+														{
+															"key": "categoryId"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "95168286-7349-46dc-9c0f-bce6f8348b29"
+						},
+						{
+							"name": "fullcode",
+							"item": [
+								{
+									"name": "به روش آسنکرون، کد کامل دسته بندی مشخص شده با شناسه را برمی گرداند",
+									"id": "8221355b-6ec7-46a7-93ec-fc97f7dce295",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/categories/:categoryId/fullcode",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categories",
+												":categoryId",
+												"fullcode"
+											],
+											"variable": [
+												{
+													"key": "categoryId",
+													"value": "<integer>",
+													"description": "(Required) شناسه دیتابیسی دسته بندی مورد نظر"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "14703017-5d2e-42b3-9400-a79a35cfbb64",
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/categories/:categoryId/fullcode",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"categories",
+														":categoryId",
+														"fullcode"
+													],
+													"variable": [
+														{
+															"key": "categoryId"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "f06b1d5a-d34f-4f79-b4c7-2895af6e6590"
+						},
+						{
+							"name": "deactivate",
+							"item": [
+								{
+									"name": "به روش آسنکرون، دسته بندی مشخص شده با شناسه دیتابیسی را غیرفعال می کند",
+									"id": "840f8756-973d-449a-85ad-d532bc6ee787",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/categories/:categoryId/deactivate",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categories",
+												":categoryId",
+												"deactivate"
+											],
+											"variable": [
+												{
+													"key": "categoryId",
+													"value": "<integer>",
+													"description": "(Required) شناسه دیتابیسی دسته بندی مورد نظر برای غیرفعال کردن"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "66cf0b6e-807d-4bef-a268-510eff74ce83",
+											"name": "Success",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/categories/:categoryId/deactivate",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"categories",
+														":categoryId",
+														"deactivate"
+													],
+													"variable": [
+														{
+															"key": "categoryId"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "d7dd452e-cf0b-4953-8f2f-aa752e04b2d4"
+						},
+						{
+							"name": "reactivate",
+							"item": [
+								{
+									"name": "به روش آسنکرون، دسته بندی مشخص شده با شناسه دیتابیسی را فعال می کند",
+									"id": "247b6545-a3fd-4bad-85e5-e5bc78d03f15",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/categories/:categoryId/reactivate",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categories",
+												":categoryId",
+												"reactivate"
+											],
+											"variable": [
+												{
+													"key": "categoryId",
+													"value": "<integer>",
+													"description": "(Required) شناسه دیتابیسی دسته بندی مورد نظر برای فعال کردن"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "a7225394-f66d-4cd5-8170-1168cb0c4254",
+											"name": "Success",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/categories/:categoryId/reactivate",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"categories",
+														":categoryId",
+														"reactivate"
+													],
+													"variable": [
+														{
+															"key": "categoryId"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "1226d2c5-661d-4564-81bf-eab20a2384ee"
+						},
+						{
+							"name": "به روش آسنکرون، اطلاعات نمایشی دسته بندی مشخص شده با شناسه دیتابیسی را خوانده و برمی گرداند",
+							"id": "fcf750e6-a013-4542-a9f6-a1a43012a206",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/categories/:categoryId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories",
+										":categoryId"
+									],
+									"variable": [
+										{
+											"key": "categoryId",
+											"value": "<integer>",
+											"description": "(Required) شناسه دیتابیسی دسته بندی مورد نظر"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "f38d5536-d058-4dad-9aeb-a7be50782fb3",
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/categories/:categoryId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categories",
+												":categoryId"
+											],
+											"variable": [
+												{
+													"key": "categoryId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "به روش آسنکرون، اطلاعات نمایشی اصلاح شده برای یک دسته بندی موجود را پس از اعتبارسنجی در دیتابیس ذخیره می کند",
+							"id": "9342057d-d93a-4688-8a3e-9d49bb7db32a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"code\": \"<string>\",\n  \"fullCode\": \"<string>\",\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"statusName\": \"<string>\",\n  \"enName\": \"<string>\",\n  \"status\": \"<integer>\",\n  \"priority\": \"<integer>\",\n  \"tag\": \"<string>\",\n  \"level\": \"<integer>\",\n  \"description\": \"<string>\",\n  \"parentId\": \"<integer>\",\n  \"childCount\": \"<integer>\",\n  \"branchScope\": \"<integer>\",\n  \"createdById\": \"<integer>\",\n  \"modifiedById\": \"<integer>\",\n  \"createdByName\": \"<string>\",\n  \"modifiedByName\": \"<string>\",\n  \"createdDate\": \"<dateTime>\",\n  \"state\": \"<string>\",\n  \"fiscalPeriodId\": \"<integer>\",\n  \"branchId\": \"<integer>\",\n  \"fiscalPeriodName\": \"<string>\",\n  \"branchName\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/categories/:categoryId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories",
+										":categoryId"
+									],
+									"variable": [
+										{
+											"key": "categoryId",
+											"value": "<integer>",
+											"description": "(Required) شناسه دیتابیسی دسته بندی اصلاح شده"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "86f0eae0-554b-4492-b7d3-b05310bb8708",
+									"name": "Success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"code\": \"<string>\",\n  \"fullCode\": \"<string>\",\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"statusName\": \"<string>\",\n  \"enName\": \"<string>\",\n  \"status\": \"<integer>\",\n  \"priority\": \"<integer>\",\n  \"tag\": \"<string>\",\n  \"level\": \"<integer>\",\n  \"description\": \"<string>\",\n  \"parentId\": \"<integer>\",\n  \"childCount\": \"<integer>\",\n  \"branchScope\": \"<integer>\",\n  \"createdById\": \"<integer>\",\n  \"modifiedById\": \"<integer>\",\n  \"createdByName\": \"<string>\",\n  \"modifiedByName\": \"<string>\",\n  \"createdDate\": \"<dateTime>\",\n  \"state\": \"<string>\",\n  \"fiscalPeriodId\": \"<integer>\",\n  \"branchId\": \"<integer>\",\n  \"fiscalPeriodName\": \"<string>\",\n  \"branchName\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/categories/:categoryId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categories",
+												":categoryId"
+											],
+											"variable": [
+												{
+													"key": "categoryId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "به روش آسنکرون، اطلاعات دسته بندی مشخص شده با شناسه دیتابیسی را پس از اعتبارسنجی از دیتابیس حذف می کند",
+							"id": "c2e2d342-359a-40e9-b643-e082cb5d37f9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/categories/:categoryId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories",
+										":categoryId"
+									],
+									"variable": [
+										{
+											"key": "categoryId",
+											"value": "<integer>",
+											"description": "(Required) شناسه دیتابیسی دسته بندی مورد نظر برای حذف"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "edbd245e-fa28-440a-b3a6-90c00aec27ae",
+									"name": "Success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/categories/:categoryId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categories",
+												":categoryId"
+											],
+											"variable": [
+												{
+													"key": "categoryId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"id": "cf26a9fb-fb71-48a7-8974-8932365cd5a3"
+				},
+				{
+					"name": "root",
+					"item": [
+						{
+							"name": "به روش آسنکرون، کلیه دسته بندی ها در بالاترین سطح را برمی گرداند",
+							"id": "d6104825-7890-4417-b719-b8101307af8b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/categories/root",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories",
+										"root"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "cb4f42c5-1987-4c71-ab7a-a5121e06ff6c",
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/categories/root",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categories",
+												"root"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"id": "5d9504b6-ade3-4cca-82ec-98c7b6d1809a"
+				},
+				{
+					"name": "count",
+					"item": [
+						{
+							"name": "به روش آسنکرون، تعداد کل دسته بندی ها را برمی گرداند",
+							"id": "a4858f68-566f-4b2b-944b-34884e30d7c1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/categories/count",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories",
+										"count"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "cebfb5a9-6af7-418a-aff7-ca8273bc6a69",
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/categories/count",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categories",
+												"count"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"id": "9b843cac-8490-4466-b3d9-2e375c6ccfc7"
+				},
+				{
+					"name": "به روش آسنکرون، اطلاعات صفحه بندی شده دسته بندی ها را خوانده و برمی گرداند",
+					"id": "e4c523e1-6fa1-4d65-8f18-34e4e6f2ffca",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/categories",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "43742724-8bde-493b-843c-96b5af74fdab",
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/categories",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "به روش آسنکرون، اطلاعات نمایشی یک دسته بندی جدید را پس از اعتبارسنجی در دیتابیس ذخیره می کند",
+					"id": "ae4ffd07-6d71-4d5f-b0b1-b6a4928084ee",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"code\": \"<string>\",\n  \"fullCode\": \"<string>\",\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"statusName\": \"<string>\",\n  \"enName\": \"<string>\",\n  \"status\": \"<integer>\",\n  \"priority\": \"<integer>\",\n  \"tag\": \"<string>\",\n  \"level\": \"<integer>\",\n  \"description\": \"<string>\",\n  \"parentId\": \"<integer>\",\n  \"childCount\": \"<integer>\",\n  \"branchScope\": \"<integer>\",\n  \"createdById\": \"<integer>\",\n  \"modifiedById\": \"<integer>\",\n  \"createdByName\": \"<string>\",\n  \"modifiedByName\": \"<string>\",\n  \"createdDate\": \"<dateTime>\",\n  \"state\": \"<string>\",\n  \"fiscalPeriodId\": \"<integer>\",\n  \"branchId\": \"<integer>\",\n  \"fiscalPeriodName\": \"<string>\",\n  \"branchName\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/categories",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "dd9f3917-003f-4f76-85d6-b9d56c520b83",
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"code\": \"<string>\",\n  \"fullCode\": \"<string>\",\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"statusName\": \"<string>\",\n  \"enName\": \"<string>\",\n  \"status\": \"<integer>\",\n  \"priority\": \"<integer>\",\n  \"tag\": \"<string>\",\n  \"level\": \"<integer>\",\n  \"description\": \"<string>\",\n  \"parentId\": \"<integer>\",\n  \"childCount\": \"<integer>\",\n  \"branchScope\": \"<integer>\",\n  \"createdById\": \"<integer>\",\n  \"modifiedById\": \"<integer>\",\n  \"createdByName\": \"<string>\",\n  \"modifiedByName\": \"<string>\",\n  \"createdDate\": \"<dateTime>\",\n  \"state\": \"<string>\",\n  \"fiscalPeriodId\": \"<integer>\",\n  \"branchId\": \"<integer>\",\n  \"fiscalPeriodName\": \"<string>\",\n  \"branchName\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/categories",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "به روش آسنکرون، دسته بندی ها داده شده را - در صورت امکان - حذف می کند",
+					"id": "fc72cfd0-3e29-4c8c-92c3-4144882394e9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"paraph\": \"<string>\",\n  \"items\": [\n    \"<integer>\",\n    \"<integer>\"\n  ]\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/categories",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "425e8b0e-af44-4480-986e-f5356a0345b6",
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"paraph\": \"<string>\",\n  \"items\": [\n    \"<integer>\",\n    \"<integer>\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/categories",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			],
+			"id": "6ef28820-5654-4ae5-8e1b-48156f072bef"
+		},
+		{
 			"name": "receipts",
 			"item": [
 				{
