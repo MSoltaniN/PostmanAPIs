@@ -70,12 +70,10 @@
 																"method": "GET",
 																"header": [],
 																"url": {
-																	"raw": "http://localhost:9995/accbook/account/:accountId/by-row/by-branch?from=<dateTime>&to=<dateTime>",
-																	"protocol": "http",
+																	"raw": "{{baseUrl}}/accbook/account/:accountId/by-row/by-branch?from=<dateTime>&to=<dateTime>",
 																	"host": [
-																		"localhost"
+																		"{{baseUrl}}"
 																	],
-																	"port": "9995",
 																	"path": [
 																		"accbook",
 																		"account",
@@ -159,12 +157,10 @@
 														"method": "GET",
 														"header": [],
 														"url": {
-															"raw": "http://localhost:9995/accbook/account/:accountId/by-row?from=<dateTime>&to=<dateTime>",
-															"protocol": "http",
+															"raw": "{{baseUrl}}/accbook/account/:accountId/by-row?from=<dateTime>&to=<dateTime>",
 															"host": [
-																"localhost"
+																"{{baseUrl}}"
 															],
-															"port": "9995",
 															"path": [
 																"accbook",
 																"account",
@@ -254,12 +250,10 @@
 																"method": "GET",
 																"header": [],
 																"url": {
-																	"raw": "http://localhost:9995/accbook/account/:accountId/voucher-sum/by-branch?from=<dateTime>&to=<dateTime>",
-																	"protocol": "http",
+																	"raw": "{{baseUrl}}/accbook/account/:accountId/voucher-sum/by-branch?from=<dateTime>&to=<dateTime>",
 																	"host": [
-																		"localhost"
+																		"{{baseUrl}}"
 																	],
-																	"port": "9995",
 																	"path": [
 																		"accbook",
 																		"account",
@@ -343,12 +337,10 @@
 														"method": "GET",
 														"header": [],
 														"url": {
-															"raw": "http://localhost:9995/accbook/account/:accountId/voucher-sum?from=<dateTime>&to=<dateTime>",
-															"protocol": "http",
+															"raw": "{{baseUrl}}/accbook/account/:accountId/voucher-sum?from=<dateTime>&to=<dateTime>",
 															"host": [
-																"localhost"
+																"{{baseUrl}}"
 															],
-															"port": "9995",
 															"path": [
 																"accbook",
 																"account",
@@ -8028,13 +8020,7 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [
-							{
-								"key": "X-Tadbir-License",
-								"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
-								"type": "text"
-							}
-						],
+						"header": [],
 						"url": {
 							"raw": "{{baseUrl}}/attributes",
 							"host": [
@@ -8083,16 +8069,11 @@
 							{
 								"key": "Content-Type",
 								"value": "application/json"
-							},
-							{
-								"key": "X-Tadbir-License",
-								"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
-								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"رنگ\",\n  \"branchId\": 1,\n  \"fiscalPeriodId\":1,\n  \"enName\": \"color\",\n  \"description\": \"desc\",\n  \"Type\": \"\",\n  \"State\": \"\"\n}",
+							"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"branchId\": \"<integer>\",\n  \"branchName\": \"<string>\",\n  \"enName\": \"<string>\",\n  \"description\": \"<string>\",\n  \"type\": \"<integer>\",\n  \"isActive\": \"<boolean>\"\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -8163,16 +8144,11 @@
 							{
 								"key": "Content-Type",
 								"value": "application/json"
-							},
-							{
-								"key": "X-Tadbir-License",
-								"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
-								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"paraph\": \"حذف\",\n  \"items\": [\n    \"1\"\n  ]\n}",
+							"raw": "{\n  \"paraph\": \"<string>\",\n  \"items\": [\n    \"<integer>\",\n    \"<integer>\"\n  ]\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -8592,420 +8568,6 @@
 								}
 							],
 							"id": "99ac6258-367e-4325-8a0b-670cc25b4e8c"
-						},
-						{
-							"name": "property-groups",
-							"item": [
-								{
-									"name": "{propertyGroupId}",
-									"item": [
-										{
-											"name": "به روش آسنکرون، اطلاعات نمایشی گروه ویژگی مشخص شده با شناسه دیتابیسی را خوانده و برمی گرداند",
-											"id": "4cf02ce1-8672-4cea-b020-342cdb01a5d1",
-											"protocolProfileBehavior": {
-												"disableBodyPruning": true
-											},
-											"request": {
-												"method": "GET",
-												"header": [],
-												"url": {
-													"raw": "{{baseUrl}}/property-groups/:propertyGroupId",
-													"host": [
-														"{{baseUrl}}"
-													],
-													"path": [
-														"property-groups",
-														":propertyGroupId"
-													],
-													"variable": [
-														{
-															"key": "propertyGroupId",
-															"value": "<integer>",
-															"description": "(Required) شناسه دیتابیسی گروه ویژگی مورد نظر"
-														}
-													]
-												}
-											},
-											"response": [
-												{
-													"id": "3cc61e27-cd11-4cd7-83a1-aa2a78e51678",
-													"name": "Success",
-													"originalRequest": {
-														"method": "GET",
-														"header": [],
-														"url": {
-															"raw": "{{baseUrl}}/property-groups/:propertyGroupId",
-															"host": [
-																"{{baseUrl}}"
-															],
-															"path": [
-																"property-groups",
-																":propertyGroupId"
-															],
-															"variable": [
-																{
-																	"key": "propertyGroupId"
-																}
-															]
-														}
-													},
-													"status": "OK",
-													"code": 200,
-													"_postman_previewlanguage": "text",
-													"header": [],
-													"cookie": [],
-													"body": ""
-												}
-											]
-										},
-										{
-											"name": "به روش آسنکرون، اطلاعات نمایشی اصلاح شده برای یک گروه ویژگی موجود را پس از اعتبارسنجی در دیتابیس ذخیره می کند",
-											"id": "90ba9808-443c-4437-b0c7-7b78445dfdd9",
-											"protocolProfileBehavior": {
-												"disableBodyPruning": true
-											},
-											"request": {
-												"method": "PUT",
-												"header": [
-													{
-														"key": "Content-Type",
-														"value": "application/json"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"enName\": \"<string>\",\n  \"description\": \"<string>\",\n  \"branchScope\": \"<integer>\",\n  \"createdById\": \"<integer>\",\n  \"modifiedById\": \"<integer>\",\n  \"createdByName\": \"<string>\",\n  \"modifiedByName\": \"<string>\",\n  \"createdDate\": \"<dateTime>\",\n  \"state\": \"<string>\",\n  \"fiscalPeriodId\": \"<integer>\",\n  \"branchId\": \"<integer>\",\n  \"fiscalPeriodName\": \"<string>\",\n  \"branchName\": \"<string>\"\n}",
-													"options": {
-														"raw": {
-															"headerFamily": "json",
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{baseUrl}}/property-groups/:propertyGroupId",
-													"host": [
-														"{{baseUrl}}"
-													],
-													"path": [
-														"property-groups",
-														":propertyGroupId"
-													],
-													"variable": [
-														{
-															"key": "propertyGroupId",
-															"value": "<integer>",
-															"description": "(Required) شناسه دیتابیسی گروه ویژگی اصلاح شده"
-														}
-													]
-												}
-											},
-											"response": [
-												{
-													"id": "24d53427-52c9-4093-bce9-1d2adf191390",
-													"name": "Success",
-													"originalRequest": {
-														"method": "PUT",
-														"header": [
-															{
-																"key": "Content-Type",
-																"value": "application/json"
-															}
-														],
-														"body": {
-															"mode": "raw",
-															"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"enName\": \"<string>\",\n  \"description\": \"<string>\",\n  \"branchScope\": \"<integer>\",\n  \"createdById\": \"<integer>\",\n  \"modifiedById\": \"<integer>\",\n  \"createdByName\": \"<string>\",\n  \"modifiedByName\": \"<string>\",\n  \"createdDate\": \"<dateTime>\",\n  \"state\": \"<string>\",\n  \"fiscalPeriodId\": \"<integer>\",\n  \"branchId\": \"<integer>\",\n  \"fiscalPeriodName\": \"<string>\",\n  \"branchName\": \"<string>\"\n}",
-															"options": {
-																"raw": {
-																	"headerFamily": "json",
-																	"language": "json"
-																}
-															}
-														},
-														"url": {
-															"raw": "{{baseUrl}}/property-groups/:propertyGroupId",
-															"host": [
-																"{{baseUrl}}"
-															],
-															"path": [
-																"property-groups",
-																":propertyGroupId"
-															],
-															"variable": [
-																{
-																	"key": "propertyGroupId"
-																}
-															]
-														}
-													},
-													"status": "OK",
-													"code": 200,
-													"_postman_previewlanguage": "text",
-													"header": [],
-													"cookie": [],
-													"body": ""
-												}
-											]
-										},
-										{
-											"name": "به روش آسنکرون، اطلاعات گروه ویژگی مشخص شده با شناسه دیتابیسی را پس از اعتبارسنجی از دیتابیس حذف می کند",
-											"id": "aa1b2f51-7c72-4862-9180-651de2ec2afd",
-											"protocolProfileBehavior": {
-												"disableBodyPruning": true
-											},
-											"request": {
-												"method": "DELETE",
-												"header": [],
-												"url": {
-													"raw": "{{baseUrl}}/property-groups/:propertyGroupId",
-													"host": [
-														"{{baseUrl}}"
-													],
-													"path": [
-														"property-groups",
-														":propertyGroupId"
-													],
-													"variable": [
-														{
-															"key": "propertyGroupId",
-															"value": "<integer>",
-															"description": "(Required) شناسه دیتابیسی گروه ویژگی مورد نظر برای حذف"
-														}
-													]
-												}
-											},
-											"response": [
-												{
-													"id": "f3db2766-3fb9-41c5-bb99-fe61607ca1d8",
-													"name": "Success",
-													"originalRequest": {
-														"method": "DELETE",
-														"header": [],
-														"url": {
-															"raw": "{{baseUrl}}/property-groups/:propertyGroupId",
-															"host": [
-																"{{baseUrl}}"
-															],
-															"path": [
-																"property-groups",
-																":propertyGroupId"
-															],
-															"variable": [
-																{
-																	"key": "propertyGroupId"
-																}
-															]
-														}
-													},
-													"status": "OK",
-													"code": 200,
-													"_postman_previewlanguage": "text",
-													"header": [],
-													"cookie": [],
-													"body": ""
-												}
-											]
-										}
-									],
-									"id": "1a4f2ce4-d093-4ddd-ba22-4d7e2a552376"
-								},
-								{
-									"name": "به روش آسنکرون، اطلاعات صفحه بندی شده گروه های ویژگی را خوانده و برمی گرداند",
-									"id": "401d9de8-17fe-42fc-ac0f-56eec302d3ec",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{baseUrl}}/property-groups",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"property-groups"
-											]
-										}
-									},
-									"response": [
-										{
-											"id": "fb4171c6-72d3-4c20-ab5b-55b3514da04b",
-											"name": "Success",
-											"originalRequest": {
-												"method": "GET",
-												"header": [],
-												"url": {
-													"raw": "{{baseUrl}}/property-groups",
-													"host": [
-														"{{baseUrl}}"
-													],
-													"path": [
-														"property-groups"
-													]
-												}
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": "text",
-											"header": [],
-											"cookie": [],
-											"body": ""
-										}
-									]
-								},
-								{
-									"name": "به روش آسنکرون، اطلاعات نمایشی یک گروه ویژگی جدید را پس از اعتبارسنجی در دیتابیس ذخیره می کند",
-									"id": "7b4a4f23-2e96-42a2-9c2f-19821ca59155",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "POST",
-										"header": [
-											{
-												"key": "Content-Type",
-												"value": "application/json"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"enName\": \"<string>\",\n  \"description\": \"<string>\",\n  \"branchScope\": \"<integer>\",\n  \"createdById\": \"<integer>\",\n  \"modifiedById\": \"<integer>\",\n  \"createdByName\": \"<string>\",\n  \"modifiedByName\": \"<string>\",\n  \"createdDate\": \"<dateTime>\",\n  \"state\": \"<string>\",\n  \"fiscalPeriodId\": \"<integer>\",\n  \"branchId\": \"<integer>\",\n  \"fiscalPeriodName\": \"<string>\",\n  \"branchName\": \"<string>\"\n}",
-											"options": {
-												"raw": {
-													"headerFamily": "json",
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{baseUrl}}/property-groups",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"property-groups"
-											]
-										}
-									},
-									"response": [
-										{
-											"id": "f447d94d-8a86-4528-b92a-9a16c4108e86",
-											"name": "Success",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"key": "Content-Type",
-														"value": "application/json"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"enName\": \"<string>\",\n  \"description\": \"<string>\",\n  \"branchScope\": \"<integer>\",\n  \"createdById\": \"<integer>\",\n  \"modifiedById\": \"<integer>\",\n  \"createdByName\": \"<string>\",\n  \"modifiedByName\": \"<string>\",\n  \"createdDate\": \"<dateTime>\",\n  \"state\": \"<string>\",\n  \"fiscalPeriodId\": \"<integer>\",\n  \"branchId\": \"<integer>\",\n  \"fiscalPeriodName\": \"<string>\",\n  \"branchName\": \"<string>\"\n}",
-													"options": {
-														"raw": {
-															"headerFamily": "json",
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{baseUrl}}/property-groups",
-													"host": [
-														"{{baseUrl}}"
-													],
-													"path": [
-														"property-groups"
-													]
-												}
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": "text",
-											"header": [],
-											"cookie": [],
-											"body": ""
-										}
-									]
-								},
-								{
-									"name": "به روش آسنکرون، گروه های ویژگی داده شده را - در صورت امکان - حذف می کند",
-									"id": "b262e28c-77fb-4738-953e-82bc39e34e08",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "PUT",
-										"header": [
-											{
-												"key": "Content-Type",
-												"value": "application/json"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n  \"paraph\": \"<string>\",\n  \"items\": [\n    \"<integer>\",\n    \"<integer>\"\n  ]\n}",
-											"options": {
-												"raw": {
-													"headerFamily": "json",
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{baseUrl}}/property-groups",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"property-groups"
-											]
-										}
-									},
-									"response": [
-										{
-											"id": "b15beaef-e94e-4ece-a175-562791a4e1c9",
-											"name": "Success",
-											"originalRequest": {
-												"method": "PUT",
-												"header": [
-													{
-														"key": "Content-Type",
-														"value": "application/json"
-													}
-												],
-												"body": {
-													"mode": "raw",
-													"raw": "{\n  \"paraph\": \"<string>\",\n  \"items\": [\n    \"<integer>\",\n    \"<integer>\"\n  ]\n}",
-													"options": {
-														"raw": {
-															"headerFamily": "json",
-															"language": "json"
-														}
-													}
-												},
-												"url": {
-													"raw": "{{baseUrl}}/property-groups",
-													"host": [
-														"{{baseUrl}}"
-													],
-													"path": [
-														"property-groups"
-													]
-												}
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": "text",
-											"header": [],
-											"cookie": [],
-											"body": ""
-										}
-									]
-								}
-							],
-							"id": "ae0dd5a8-7d97-4a0b-885c-15a7b60d6134"
 						},
 						{
 							"name": "roles",
@@ -10097,43 +9659,11 @@
 									{
 										"key": "Content-Type",
 										"value": "application/json"
-									},
-									{
-										"key": "X-Tadbir-License",
-										"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
-										"type": "text"
 									}
 								],
 								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "formFile",
-											"type": "file",
-											"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
-											"src": "/C:/Users/Lenovo/Desktop/benz-logo.jpg"
-										},
-										{
-											"key": "branchId",
-											"value": "1",
-											"type": "text"
-										},
-										{
-											"key": "name",
-											"value": "بنز",
-											"type": "text"
-										},
-										{
-											"key": "Id",
-											"value": "4",
-											"type": "text"
-										},
-										{
-											"key": "ImageId",
-											"value": "25",
-											"type": "text"
-										}
-									],
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"branchId\": \"<integer>\",\n  \"branchName\": \"<string>\",\n  \"enName\": \"<string>\",\n  \"description\": \"<string>\",\n  \"socialLink\": \"<string>\",\n  \"website\": \"<string>\",\n  \"metaKeyword\": \"<string>\",\n  \"state\": \"<string>\"\n}",
 									"options": {
 										"raw": {
 											"headerFamily": "json",
@@ -10153,7 +9683,7 @@
 									"variable": [
 										{
 											"key": "brandId",
-											"value": "4",
+											"value": "<integer>",
 											"description": "(Required) شناسه دیتابیسی برند اصلاح شده"
 										}
 									]
@@ -10397,49 +9927,8 @@
 							}
 						],
 						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "formFile",
-									"type": "file",
-									"src": "/C:/Users/Lenovo/Desktop/bmw.jpg"
-								},
-								{
-									"key": "branchId",
-									"value": "1",
-									"type": "text"
-								},
-								{
-									"key": "name",
-									"value": "بی ام دبلیو",
-									"type": "text"
-								},
-								{
-									"key": "enName",
-									"value": "BMW",
-									"type": "text"
-								},
-								{
-									"key": "description",
-									"value": "bmw car",
-									"type": "text"
-								},
-								{
-									"key": "socialLink",
-									"value": "bmw/bmw",
-									"type": "text"
-								},
-								{
-									"key": "website",
-									"value": "www.bmw.com",
-									"type": "text"
-								},
-								{
-									"key": "metaKeyword",
-									"value": "bmw",
-									"type": "text"
-								}
-							],
+							"mode": "raw",
+							"raw": "{\n    \"branchId\": 1,\n    \"branchName\": null,\n    \"name\": \"اپل\",\n    \"enName\": \"apple\",\n    \"description\": \"برند لوازم دیجیتال\",\n    \"socialLink\": \"www.apple.com\",\n    \"website\": \"www.apple.com\",\n    \"metaKeyword\": \"apple\",\n    \"state\": \"Active\"\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -20026,17 +19515,7 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "X-Tadbir-License",
-										"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "formdata",
-									"formdata": []
-								},
+								"header": [],
 								"url": {
 									"raw": "{{baseUrl}}/images/:imageId",
 									"host": [
@@ -20046,17 +19525,10 @@
 										"images",
 										":imageId"
 									],
-									"query": [
-										{
-											"key": "imageId",
-											"value": "1",
-											"disabled": true
-										}
-									],
 									"variable": [
 										{
 											"key": "imageId",
-											"value": "25",
+											"value": "<integer>",
 											"description": "(Required) شناسه دیتابیسی عکس مورد نظر"
 										}
 									]
@@ -20204,7 +19676,7 @@
 									"variable": [
 										{
 											"key": "imageId",
-											"value": "18",
+											"value": "<integer>",
 											"description": "(Required) شناسه دیتابیسی عکس مورد نظر برای حذف"
 										}
 									]
@@ -20244,243 +19716,6 @@
 						}
 					],
 					"id": "af8ae95a-50ca-4dd3-ad24-fede3496ecad"
-				},
-				{
-					"name": "{imageName}",
-					"item": [
-						{
-							"name": "به روش آسنکرون، اطلاعات نمایشی عکس مشخص شده با شناسه دیتابیسی را خوانده و برمی گرداند",
-							"id": "6fe6c8e4-57b0-45c0-963f-1900d92250ab",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "X-Tadbir-License",
-										"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "formdata",
-									"formdata": []
-								},
-								"url": {
-									"raw": "{{baseUrl}}/images?name=1700652764902g.jpg&SizeType=original&ResizeWidth=200&ResizeHeight=450&ResizeMode=boxpad",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"images"
-									],
-									"query": [
-										{
-											"key": "name",
-											"value": "1700652764902g.jpg"
-										},
-										{
-											"key": "SizeType",
-											"value": "original"
-										},
-										{
-											"key": "ResizeWidth",
-											"value": "200"
-										},
-										{
-											"key": "ResizeHeight",
-											"value": "450"
-										},
-										{
-											"key": "ResizeMode",
-											"value": "boxpad"
-										}
-									]
-								}
-							},
-							"response": [
-								{
-									"id": "46f3f588-dc8d-440c-bb49-7e15318e0bfa",
-									"name": "Success",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{baseUrl}}/images/:imageId",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"images",
-												":imageId"
-											],
-											"variable": [
-												{
-													"key": "imageId"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "text",
-									"header": [],
-									"cookie": [],
-									"body": ""
-								}
-							]
-						},
-						{
-							"name": "به روش آسنکرون، اطلاعات نمایشی اصلاح شده برای یک عکس موجود را پس از اعتبارسنجی در دیتابیس ذخیره می کند",
-							"id": "c4300f90-614b-477d-88aa-5a1e4738f4cc",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PUT",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"originalName\": \"<string>\",\n  \"contentType\": \"<string>\",\n  \"fileSize\": \"<long>\",\n  \"file\": \"<string>\",\n  \"checkSum\": \"<string>\",\n  \"isActive\": \"<boolean>\",\n  \"imageWidth\": \"<integer>\",\n  \"imageHeight\": \"<integer>\",\n  \"thumbnail\": \"<string>\",\n  \"thumbnailWidth\": \"<integer>\",\n  \"thumbnailHeight\": \"<integer>\",\n  \"alternativeText\": \"<string>\"\n}",
-									"options": {
-										"raw": {
-											"headerFamily": "json",
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{baseUrl}}/images/:imageId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"images",
-										":imageId"
-									],
-									"variable": [
-										{
-											"key": "imageId",
-											"value": "<integer>",
-											"description": "(Required) شناسه دیتابیسی عکس اصلاح شده"
-										}
-									]
-								}
-							},
-							"response": [
-								{
-									"id": "351e9596-2f25-4ba6-95dd-eabe2feca916",
-									"name": "Success",
-									"originalRequest": {
-										"method": "PUT",
-										"header": [
-											{
-												"key": "Content-Type",
-												"value": "application/json"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"originalName\": \"<string>\",\n  \"contentType\": \"<string>\",\n  \"fileSize\": \"<long>\",\n  \"file\": \"<string>\",\n  \"checkSum\": \"<string>\",\n  \"isActive\": \"<boolean>\",\n  \"imageWidth\": \"<integer>\",\n  \"imageHeight\": \"<integer>\",\n  \"thumbnail\": \"<string>\",\n  \"thumbnailWidth\": \"<integer>\",\n  \"thumbnailHeight\": \"<integer>\",\n  \"alternativeText\": \"<string>\"\n}",
-											"options": {
-												"raw": {
-													"headerFamily": "json",
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{baseUrl}}/images/:imageId",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"images",
-												":imageId"
-											],
-											"variable": [
-												{
-													"key": "imageId"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "text",
-									"header": [],
-									"cookie": [],
-									"body": ""
-								}
-							]
-						},
-						{
-							"name": "به روش آسنکرون، اطلاعات عکس مشخص شده با شناسه دیتابیسی را پس از اعتبارسنجی از دیتابیس حذف می کند",
-							"id": "f39ec28d-da25-463c-9ace-2c35c4eac7c5",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/images/:imageId",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"images",
-										":imageId"
-									],
-									"variable": [
-										{
-											"key": "imageId",
-											"value": "<integer>",
-											"description": "(Required) شناسه دیتابیسی عکس مورد نظر برای حذف"
-										}
-									]
-								}
-							},
-							"response": [
-								{
-									"id": "5c197ea5-ea1f-46bc-8878-13a228cae6aa",
-									"name": "Success",
-									"originalRequest": {
-										"method": "DELETE",
-										"header": [],
-										"url": {
-											"raw": "{{baseUrl}}/images/:imageId",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"images",
-												":imageId"
-											],
-											"variable": [
-												{
-													"key": "imageId"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "text",
-									"header": [],
-									"cookie": [],
-									"body": ""
-								}
-							]
-						}
-					],
-					"id": "2dcd461a-bef5-43a3-9358-fecb18c234aa"
 				},
 				{
 					"name": "به روش آسنکرون، اطلاعات صفحه بندی شده عکس ها را خوانده و برمی گرداند",
@@ -20539,27 +19774,11 @@
 							{
 								"key": "Content-Type",
 								"value": "application/json"
-							},
-							{
-								"key": "X-Tadbir-License",
-								"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
-								"type": "text"
 							}
 						],
 						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "imageFile",
-									"type": "file",
-									"src": "/C:/Users/Lenovo/Desktop/dodge.jpg"
-								},
-								{
-									"key": "alternativeText",
-									"value": "ast box pad",
-									"type": "text"
-								}
-							],
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"originalName\": \"<string>\",\n  \"contentType\": \"<string>\",\n  \"fileSize\": \"<long>\",\n  \"file\": \"<string>\",\n  \"checkSum\": \"<string>\",\n  \"isActive\": \"<boolean>\",\n  \"imageWidth\": \"<integer>\",\n  \"imageHeight\": \"<integer>\",\n  \"thumbnail\": \"<string>\",\n  \"thumbnailWidth\": \"<integer>\",\n  \"thumbnailHeight\": \"<integer>\",\n  \"alternativeText\": \"<string>\"\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -20630,28 +19849,11 @@
 							{
 								"key": "Content-Type",
 								"value": "application/json"
-							},
-							{
-								"key": "X-Tadbir-License",
-								"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
-								"type": "text"
 							}
 						],
 						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "imageFile",
-									"type": "file",
-									"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
-									"src": "/C:/Users/Lenovo/Desktop/benz-logo.jpg"
-								},
-								{
-									"key": "alternativeText",
-									"value": "benz",
-									"type": "text"
-								}
-							],
+							"mode": "raw",
+							"raw": "{\n  \"paraph\": \"<string>\",\n  \"items\": [\n    \"<integer>\",\n    \"<integer>\"\n  ]\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -20660,19 +19862,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{baseUrl}}/images/:imageId",
+							"raw": "{{baseUrl}}/images",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
-								"images",
-								":imageId"
-							],
-							"variable": [
-								{
-									"key": "imageId",
-									"value": "18"
-								}
+								"images"
 							]
 						}
 					},
@@ -36331,7 +35526,13 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "X-Tadbir-License",
+								"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "{{baseUrl}}/properties",
 							"host": [
@@ -36380,11 +35581,16 @@
 							{
 								"key": "Content-Type",
 								"value": "application/json"
+							},
+							{
+								"key": "X-Tadbir-License",
+								"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
+								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"اندازه رم\",\n  \"enName\": \"ram size\",\n  \"description\": \"توضیح\",\n \"type\": \"متنی\",\n  \"prefix\": \"RAM\",\n  \"suffix\": \"\",\n  \"fiscalPeriodId\": 1,\n  \"branchId\": 1\n}\n{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"branchId\": \"<integer>\",\n  \"branchName\": \"<string>\",\n  \"enName\": \"<string>\",\n  \"description\": \"<string>\",\n  \"type\": \"<integer>\",\n  \"prefix\": \"<string>\",\n  \"suffix\": \"<string>\",\n  \"state\": \"<string>\"\n}",
+							"raw": "{\n  \"id\": 0,\n  \"branchId\": 1,\n  \"FiscalPeriodId\" : 1,\n  \"name\": \"رنگ\",\n  \"enName\": \"color\",\n  \"description\": \"تست رنگ\",\n  \"type\": \"1\",\n  \"prefix\": \"cr\",\n  \"suffix\": \"cr\",\n  \"defaultValues\": { \"1\":\"defaultvalue1\",\"2\":\"defaultvalue2\" }\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -36520,420 +35726,6 @@
 				}
 			],
 			"id": "f34518b7-5251-4e72-9248-83c6c57a21ba"
-		},
-		{
-			"name": "property-groups",
-			"item": [
-				{
-					"name": "{propertyGroupId}",
-					"item": [
-						{
-							"name": "به روش آسنکرون، اطلاعات نمایشی گروه ویژگی مشخص شده با شناسه دیتابیسی را خوانده و برمی گرداند",
-							"id": "9cf43076-874f-4bef-8a66-1c6ceee17f48",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "X-Tadbir-License",
-										"value": "oMaT7fVPc/RevH8BgZQ56kEuYWOpsfKVTYRiaiiFsn22akN9movMJ/VHagneTLVj67OSnQebTpFMPaY/BSex+VwsscWqS/pSMtNGSnDDYxMRzD15JjQNLkyq1Ttw+4whvBmoizkEU4rmT/zx89VnPyzAw9XW/JcHsw7Uq6VxpJRu3dCLsSQylQhiBqc/wYQNRSlru4/qiXmQJjCBv/xzMYP9i4/RqesR2kpci8vDBcFBGkzRj77lWePdsHZ6eDZRjL5edC56rtVs2bbW4EQhW82wa3eC6k4yV1BKfaBsB3+SgyB8lYzigEEN2h0LFzM6oGwN2zwsh5zTFv+ipBRGhg==",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "{{baseUrl}}/property-groups/?propertyGroupId=2",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"property-groups",
-										""
-									],
-									"query": [
-										{
-											"key": "propertyGroupId",
-											"value": "2"
-										}
-									]
-								}
-							},
-							"response": [
-								{
-									"id": "e9bbe430-5c3f-4a86-a85e-a125389a5df1",
-									"name": "Success",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "/property-groups/:propertyGroupId",
-											"path": [
-												"property-groups",
-												":propertyGroupId"
-											],
-											"variable": [
-												{
-													"key": "propertyGroupId"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "text",
-									"header": [],
-									"cookie": [],
-									"body": ""
-								}
-							]
-						},
-						{
-							"name": "به روش آسنکرون، اطلاعات نمایشی اصلاح شده برای یک گروه ویژگی موجود را پس از اعتبارسنجی در دیتابیس ذخیره می کند",
-							"id": "c792504d-0912-4794-bc74-1c8908c8b869",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PUT",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									},
-									{
-										"key": "X-Tadbir-License",
-										"value": "oMaT7fVPc/RevH8BgZQ56kEuYWOpsfKVTYRiaiiFsn22akN9movMJ/VHagneTLVj67OSnQebTpFMPaY/BSex+VwsscWqS/pSMtNGSnDDYxMRzD15JjQNLkyq1Ttw+4whvBmoizkEU4rmT/zx89VnPyzAw9XW/JcHsw7Uq6VxpJRu3dCLsSQylQhiBqc/wYQNRSlru4/qiXmQJjCBv/xzMYP9i4/RqesR2kpci8vDBcFBGkzRj77lWePdsHZ6eDZRjL5edC56rtVs2bbW4EQhW82wa3eC6k4yV1BKfaBsB3+SgyB8lYzigEEN2h0LFzM6oGwN2zwsh5zTFv+ipBRGhg==",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n  \"name\": \"گروه یک\",\n  \"enName\": \"group 1\",\n  \"description\": \"توضیح\",\n  \"fiscalPeriodId\": 1,\n  \"branchId\": 1\n}",
-									"options": {
-										"raw": {
-											"headerFamily": "json",
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{baseUrl}}/property-groups?PropertyGroupId=1",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"property-groups"
-									],
-									"query": [
-										{
-											"key": "PropertyGroupId",
-											"value": "1"
-										}
-									]
-								}
-							},
-							"response": [
-								{
-									"id": "42fafc1b-dccb-4afb-a50b-5cfaa0adff45",
-									"name": "Success",
-									"originalRequest": {
-										"method": "PUT",
-										"header": [
-											{
-												"key": "Content-Type",
-												"value": "application/json"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"enName\": \"<string>\",\n  \"description\": \"<string>\",\n  \"branchScope\": \"<integer>\",\n  \"createdById\": \"<integer>\",\n  \"modifiedById\": \"<integer>\",\n  \"createdByName\": \"<string>\",\n  \"modifiedByName\": \"<string>\",\n  \"createdDate\": \"<dateTime>\",\n  \"state\": \"<string>\",\n  \"fiscalPeriodId\": \"<integer>\",\n  \"branchId\": \"<integer>\",\n  \"fiscalPeriodName\": \"<string>\",\n  \"branchName\": \"<string>\"\n}",
-											"options": {
-												"raw": {
-													"headerFamily": "json",
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "/property-groups/:propertyGroupId",
-											"path": [
-												"property-groups",
-												":propertyGroupId"
-											],
-											"variable": [
-												{
-													"key": "propertyGroupId"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "text",
-									"header": [],
-									"cookie": [],
-									"body": ""
-								}
-							]
-						},
-						{
-							"name": "به روش آسنکرون، اطلاعات گروه ویژگی مشخص شده با شناسه دیتابیسی را پس از اعتبارسنجی از دیتابیس حذف می کند",
-							"id": "f7c2bd0e-641a-453e-8161-7f7e9c6d1c24",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "DELETE",
-								"header": [
-									{
-										"key": "X-Tadbir-License",
-										"value": "oMaT7fVPc/RevH8BgZQ56kEuYWOpsfKVTYRiaiiFsn22akN9movMJ/VHagneTLVj67OSnQebTpFMPaY/BSex+VwsscWqS/pSMtNGSnDDYxMRzD15JjQNLkyq1Ttw+4whvBmoizkEU4rmT/zx89VnPyzAw9XW/JcHsw7Uq6VxpJRu3dCLsSQylQhiBqc/wYQNRSlru4/qiXmQJjCBv/xzMYP9i4/RqesR2kpci8vDBcFBGkzRj77lWePdsHZ6eDZRjL5edC56rtVs2bbW4EQhW82wa3eC6k4yV1BKfaBsB3+SgyB8lYzigEEN2h0LFzM6oGwN2zwsh5zTFv+ipBRGhg==",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "{{baseUrl}}/property-groups/1",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"property-groups",
-										"1"
-									]
-								}
-							},
-							"response": [
-								{
-									"id": "3ce07f40-e50a-4970-a10c-bd2b18cad199",
-									"name": "Success",
-									"originalRequest": {
-										"method": "DELETE",
-										"header": [],
-										"url": {
-											"raw": "/property-groups/:propertyGroupId",
-											"path": [
-												"property-groups",
-												":propertyGroupId"
-											],
-											"variable": [
-												{
-													"key": "propertyGroupId"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "text",
-									"header": [],
-									"cookie": [],
-									"body": ""
-								}
-							]
-						}
-					],
-					"id": "a30daa51-988d-44a8-91e2-e125cbe8582e"
-				},
-				{
-					"name": "به روش آسنکرون، اطلاعات صفحه بندی شده گروه های ویژگی را خوانده و برمی گرداند",
-					"id": "8bb93b1c-c1f5-42a8-bb91-6037ea8d2f6f",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "X-Tadbir-License",
-								"value": "oMaT7fVPc/RevH8BgZQ56kEuYWOpsfKVTYRiaiiFsn22akN9movMJ/VHagneTLVj67OSnQebTpFMPaY/BSex+VwsscWqS/pSMtNGSnDDYxMRzD15JjQNLkyq1Ttw+4whvBmoizkEU4rmT/zx89VnPyzAw9XW/JcHsw7Uq6VxpJRu3dCLsSQylQhiBqc/wYQNRSlru4/qiXmQJjCBv/xzMYP9i4/RqesR2kpci8vDBcFBGkzRj77lWePdsHZ6eDZRjL5edC56rtVs2bbW4EQhW82wa3eC6k4yV1BKfaBsB3+SgyB8lYzigEEN2h0LFzM6oGwN2zwsh5zTFv+ipBRGhg==",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "{{baseUrl}}/property-groups",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"property-groups"
-							]
-						}
-					},
-					"response": [
-						{
-							"id": "f831d2ff-be32-46fd-a79c-c981151d7026",
-							"name": "Success",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "/property-groups",
-									"path": [
-										"property-groups"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "text",
-							"header": [],
-							"cookie": [],
-							"body": ""
-						}
-					]
-				},
-				{
-					"name": "به روش آسنکرون، اطلاعات نمایشی یک گروه ویژگی جدید را پس از اعتبارسنجی در دیتابیس ذخیره می کند",
-					"id": "7ed07865-5851-4b55-9a0e-8cfcaeab5e42",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "X-Tadbir-License",
-								"value": "oMaT7fVPc/RevH8BgZQ56kEuYWOpsfKVTYRiaiiFsn22akN9movMJ/VHagneTLVj67OSnQebTpFMPaY/BSex+VwsscWqS/pSMtNGSnDDYxMRzD15JjQNLkyq1Ttw+4whvBmoizkEU4rmT/zx89VnPyzAw9XW/JcHsw7Uq6VxpJRu3dCLsSQylQhiBqc/wYQNRSlru4/qiXmQJjCBv/xzMYP9i4/RqesR2kpci8vDBcFBGkzRj77lWePdsHZ6eDZRjL5edC56rtVs2bbW4EQhW82wa3eC6k4yV1BKfaBsB3+SgyB8lYzigEEN2h0LFzM6oGwN2zwsh5zTFv+ipBRGhg==",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"name\": \"گروه یک\",\n  \"enName\": \"group1\",\n  \"description\": \"توضیح\",\n  \"fiscalPeriodId\": 1,\n  \"branchId\": 1\n}",
-							"options": {
-								"raw": {
-									"headerFamily": "json",
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{baseUrl}}/property-groups",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"property-groups"
-							]
-						}
-					},
-					"response": [
-						{
-							"id": "f47e31d0-b78d-434f-b8e4-b8fc8a9bf369",
-							"name": "Success",
-							"originalRequest": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"enName\": \"<string>\",\n  \"description\": \"<string>\",\n  \"branchScope\": \"<integer>\",\n  \"createdById\": \"<integer>\",\n  \"modifiedById\": \"<integer>\",\n  \"createdByName\": \"<string>\",\n  \"modifiedByName\": \"<string>\",\n  \"createdDate\": \"<dateTime>\",\n  \"state\": \"<string>\",\n  \"fiscalPeriodId\": \"<integer>\",\n  \"branchId\": \"<integer>\",\n  \"fiscalPeriodName\": \"<string>\",\n  \"branchName\": \"<string>\"\n}",
-									"options": {
-										"raw": {
-											"headerFamily": "json",
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "/property-groups",
-									"path": [
-										"property-groups"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "text",
-							"header": [],
-							"cookie": [],
-							"body": ""
-						}
-					]
-				},
-				{
-					"name": "به روش آسنکرون، گروه های ویژگی داده شده را - در صورت امکان - حذف می کند",
-					"id": "b608969e-faf9-4ff2-b5e3-04d87b6b3a38",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"paraph\": \"<string>\",\n  \"items\": [\n    \"<integer>\",\n    \"<integer>\"\n  ]\n}",
-							"options": {
-								"raw": {
-									"headerFamily": "json",
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{baseUrl}}/property-groups",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"property-groups"
-							]
-						}
-					},
-					"response": [
-						{
-							"id": "5331e90a-7fa0-4486-b4ab-e56f1152a453",
-							"name": "Success",
-							"originalRequest": {
-								"method": "PUT",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n  \"paraph\": \"<string>\",\n  \"items\": [\n    \"<integer>\",\n    \"<integer>\"\n  ]\n}",
-									"options": {
-										"raw": {
-											"headerFamily": "json",
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "/property-groups",
-									"path": [
-										"property-groups"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "text",
-							"header": [],
-							"cookie": [],
-							"body": ""
-						}
-					]
-				}
-			],
-			"id": "63ff8cde-c4c2-442a-8ca6-f3f7799cb966"
 		},
 		{
 			"name": "roles",
@@ -43837,11 +42629,16 @@
 											{
 												"key": "Content-Type",
 												"value": "application/json"
+											},
+											{
+												"key": "X-Tadbir-License",
+												"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
+												"type": "text"
 											}
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"branchId\": \"1\",\n  \"companyId\": \"2\",\n  \"fiscalPeriodId\": \"1\",\n  \"userId\": \"1\"\n\n}",
+											"raw": "{\n  \"branchId\": \"1\",\n  \"companyId\": \"1\",\n  \"fiscalPeriodId\": \"1\",\n  \"userId\": \"1\"\n\n}",
 											"options": {
 												"raw": {
 													"headerFamily": "json",
@@ -44133,24 +42930,16 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"auth": {
-							"type": "noauth"
-						},
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/json"
-							},
-							{
-								"key": "X-Tadbir-License",
-								"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
-								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"password\": \"Demo1234\",\n  \"personFullName\": \"<string>\",\n  \"userName\": \"admin\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"lastLoginDate\": \"<dateTime>\",\n  \"isEnabled\": \"<boolean>\"\n}",
+							"raw": "{\n  \"password\": \"<string>\",\n  \"personFullName\": \"<string>\",\n  \"userName\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"lastLoginDate\": \"<dateTime>\",\n  \"isEnabled\": \"<boolean>\"\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -49054,7 +47843,7 @@
 		"apikey": [
 			{
 				"key": "value",
-				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZ2l2ZW5fbmFtZSI6Itix2KfZh9io2LEg2LPbjNiz2KrZhSIsIlRhZGJpckNvbnRleHQiOnsiSWQiOjEsIlVzZXJOYW1lIjoiYWRtaW4iLCJQZXJzb25GdWxsTmFtZSI6Itix2KfZh9io2LEg2LPbjNiz2KrZhSIsIkNvbm5lY3Rpb24iOiJDZUtITkNLVnBsZkR1N3NSK2tjZitrY0FCT3FpMytRcFBGZmNQUXg1NkdPaVVBaDNyUXo0TCtSMTJVYjRpb3didVdJVXgxT0YzWEozbWpmYjE5cWJyckhJYWM1dTZobWJ6aFQrNG0zS3RnSG1qVlFZbFhWQWtpQmtzS0lsODVSMlNjNzJtRVRHak5FVC9QazdaRkppL0VnWGZGbnAyVzNPKzVSajd2QTgvd3JVb2R2UkM4akV1VUE5R2Z4N2NvSVVWL3pFV0U0RnNPWmM0NmhZSzJ0K2FXTm82d2FiUXNQUGpEeFN3bkdIblRtSS80NHBLc2NYaHpUUll2THlDc0tuVklvZkNZRHk0N09ZTWFEZFNYK0pwQT09IiwiQ29tcGFueUlkIjoyLCJCcmFuY2hJZCI6MSwiRmlzY2FsUGVyaW9kSWQiOjEsIkNvbXBhbnlOYW1lIjoi2K_Zgdiq2LEg2YXYsdqp2LLbjCIsIkJyYW5jaE5hbWUiOiIiLCJGaXNjYWxQZXJpb2ROYW1lIjoiIiwiSW52ZW50b3J5TW9kZSI6MSwiTGFzdExvZ2luRGF0ZSI6IjIwMjQtMDEtMjBUMTM6MjY6NTcuNjIzIiwiTGFuZ3VhZ2UiOiJmYSIsIlJvbGVzIjpbMV0sIlBlcm1pc3Npb25zIjpbXX0sIm5iZiI6MTcwNTc2MjI5NiwiZXhwIjoxNzA2MzY3MDk2LCJpYXQiOjE3MDU3NjIyOTYsImlzcyI6InRhZGJpci1hcGkiLCJhdWQiOiJ0YWRiaXItYXBwIn0.G2qxRggU--kHATJ3pcQj71HST8tzygogzjQkduzItCY",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZ2l2ZW5fbmFtZSI6Itix2KfZh9io2LEg2LPbjNiz2KrZhSIsIlRhZGJpckNvbnRleHQiOnsiSWQiOjEsIlVzZXJOYW1lIjoiYWRtaW4iLCJQZXJzb25GdWxsTmFtZSI6Itix2KfZh9io2LEg2LPbjNiz2KrZhSIsIkNvbm5lY3Rpb24iOiJXMThKOUNEMEJOQ3dDWG5GM29CRnlVbFlJa3Jtb3p4WUFoUkxSTHUrY3JweExyUm1yeWs2M0JLSTVBUi9VS3FRQ1ROdXF3aTM3bnlJTG9JM1gxcDRweWZuVW52eXV1QStESDFjZm5BbWlHOXVmbEt1NEsxdWY2ejAwNGg1RzgvdFhoTHVWVXFMc1NQR0plakthV1F1YzFMS01JaC9UYVVJN2dvT3lFUjVkbEcwUHcyMlh0QnFWcXhWWUZBeHlJdDJwQStxNFA4cHRpMXVPdk1YaWRYd1BYVzVnbWdQZ1B6dDlPSUhjYWpmQXhsbjdUaVIwT1JnUit5TzIwTms1SlIyQU44M09seUJtZ1hhdlFRRnAwdkh6QT09IiwiQ29tcGFueUlkIjoxLCJCcmFuY2hJZCI6MSwiRmlzY2FsUGVyaW9kSWQiOjEsIkNvbXBhbnlOYW1lIjoi2LTYsdqp2Kog2YbZhdmI2YbZhyIsIkJyYW5jaE5hbWUiOiIiLCJGaXNjYWxQZXJpb2ROYW1lIjoiIiwiSW52ZW50b3J5TW9kZSI6MSwiTGFzdExvZ2luRGF0ZSI6bnVsbCwiTGFuZ3VhZ2UiOiJmYSIsIlJvbGVzIjpbMV0sIlBlcm1pc3Npb25zIjpbXX0sIm5iZiI6MTcwNDEyMjY1OSwiZXhwIjoxNzA0NzI3NDU5LCJpYXQiOjE3MDQxMjI2NTksImlzcyI6InRhZGJpci1hcGkiLCJhdWQiOiJ0YWRiaXItYXBwIn0.Dubcw4GUaEVqFXN917XurOK58_vp9dIcI35j9H9PPe8",
 				"type": "string"
 			},
 			{
@@ -49068,7 +47857,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "17d25c3f-2da9-4558-8076-692ee313fcd9",
+				"id": "024a6b07-91ac-4ec5-9277-288ca88910e8",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -49078,7 +47867,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "7853f84d-80d5-47f8-b1a5-24da1138d2ac",
+				"id": "5e553569-180f-4399-9b66-f19aae1aa94c",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -49088,7 +47877,7 @@
 	],
 	"variable": [
 		{
-			"id": "19e53afb-04e3-4617-9aee-f25c6b36db0b",
+			"id": "15657a96-44dc-4160-992e-4916494f201b",
 			"key": "baseUrl",
 			"value": "http://localhost:9995"
 		}
