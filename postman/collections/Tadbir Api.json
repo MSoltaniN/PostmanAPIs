@@ -33841,6 +33841,1292 @@
 			"id": "71894e85-b9d6-4344-9a14-2a8f00b05781"
 		},
 		{
+			"name": "products",
+			"item": [
+				{
+					"name": "{productId}",
+					"item": [
+						{
+							"name": "assigncategories",
+							"item": [
+								{
+									"name": "به روش آسنکرون، دسته بندی ها را به محصول مربوط تخصیص می دهد",
+									"id": "412235f0-ea34-4b26-aa63-2962a76229a4",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/products/:productId/assigncategories?categoryIds=<integer>&categoryIds=<integer>&companyConnection=<string>&userContext.id=<integer>&userContext.userName=<string>&userContext.personFullName=<string>&userContext.connection=<string>&userContext.companyId=<integer>&userContext.branchId=<integer>&userContext.fiscalPeriodId=<integer>&userContext.companyName=<string>&userContext.branchName=<string>&userContext.fiscalPeriodName=<string>&userContext.inventoryMode=<integer>&userContext.lastLoginDate=<dateTime>&userContext.language=<string>&userContext.roles=<integer>&userContext.roles=<integer>&userContext.permissions=[object Object]&userContext.permissions=[object Object]",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"products",
+												":productId",
+												"assigncategories"
+											],
+											"query": [
+												{
+													"description": "دسته بندیهای انتخاب شده برای تحصیص به محصول",
+													"key": "categoryIds",
+													"value": "<integer>"
+												},
+												{
+													"description": "دسته بندیهای انتخاب شده برای تحصیص به محصول",
+													"key": "categoryIds",
+													"value": "<integer>"
+												},
+												{
+													"key": "companyConnection",
+													"value": "<string>"
+												},
+												{
+													"key": "userContext.id",
+													"value": "<integer>"
+												},
+												{
+													"key": "userContext.userName",
+													"value": "<string>"
+												},
+												{
+													"key": "userContext.personFullName",
+													"value": "<string>"
+												},
+												{
+													"key": "userContext.connection",
+													"value": "<string>"
+												},
+												{
+													"key": "userContext.companyId",
+													"value": "<integer>"
+												},
+												{
+													"key": "userContext.branchId",
+													"value": "<integer>"
+												},
+												{
+													"key": "userContext.fiscalPeriodId",
+													"value": "<integer>"
+												},
+												{
+													"key": "userContext.companyName",
+													"value": "<string>"
+												},
+												{
+													"key": "userContext.branchName",
+													"value": "<string>"
+												},
+												{
+													"key": "userContext.fiscalPeriodName",
+													"value": "<string>"
+												},
+												{
+													"key": "userContext.inventoryMode",
+													"value": "<integer>"
+												},
+												{
+													"key": "userContext.lastLoginDate",
+													"value": "<dateTime>"
+												},
+												{
+													"key": "userContext.language",
+													"value": "<string>"
+												},
+												{
+													"key": "userContext.roles",
+													"value": "<integer>"
+												},
+												{
+													"key": "userContext.roles",
+													"value": "<integer>"
+												},
+												{
+													"key": "userContext.permissions",
+													"value": "[object Object]"
+												},
+												{
+													"key": "userContext.permissions",
+													"value": "[object Object]"
+												}
+											],
+											"variable": [
+												{
+													"key": "productId",
+													"value": "<integer>",
+													"description": "(Required) شماره شناسه دیتابیسی محصول"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "340b07df-8058-4dd2-8b7a-78c6f45c800d",
+											"name": "Success",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/products/:productId/assigncategories?categoryIds=<integer>&companyConnection=<string>&userContext.id=<integer>&userContext.userName=<string>&userContext.personFullName=<string>&userContext.connection=<string>&userContext.companyId=<integer>&userContext.branchId=<integer>&userContext.fiscalPeriodId=<integer>&userContext.companyName=<string>&userContext.branchName=<string>&userContext.fiscalPeriodName=<string>&userContext.inventoryMode=<integer>&userContext.lastLoginDate=<dateTime>&userContext.language=<string>&userContext.roles=<integer>&userContext.permissions=[object Object]",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"products",
+														":productId",
+														"assigncategories"
+													],
+													"query": [
+														{
+															"description": "دسته بندیهای انتخاب شده برای تحصیص به محصول",
+															"key": "categoryIds",
+															"value": "<integer>"
+														},
+														{
+															"key": "companyConnection",
+															"value": "<string>"
+														},
+														{
+															"key": "userContext.id",
+															"value": "<integer>"
+														},
+														{
+															"key": "userContext.userName",
+															"value": "<string>"
+														},
+														{
+															"key": "userContext.personFullName",
+															"value": "<string>"
+														},
+														{
+															"key": "userContext.connection",
+															"value": "<string>"
+														},
+														{
+															"key": "userContext.companyId",
+															"value": "<integer>"
+														},
+														{
+															"key": "userContext.branchId",
+															"value": "<integer>"
+														},
+														{
+															"key": "userContext.fiscalPeriodId",
+															"value": "<integer>"
+														},
+														{
+															"key": "userContext.companyName",
+															"value": "<string>"
+														},
+														{
+															"key": "userContext.branchName",
+															"value": "<string>"
+														},
+														{
+															"key": "userContext.fiscalPeriodName",
+															"value": "<string>"
+														},
+														{
+															"key": "userContext.inventoryMode",
+															"value": "<integer>"
+														},
+														{
+															"key": "userContext.lastLoginDate",
+															"value": "<dateTime>"
+														},
+														{
+															"key": "userContext.language",
+															"value": "<string>"
+														},
+														{
+															"key": "userContext.roles",
+															"value": "<integer>"
+														},
+														{
+															"key": "userContext.permissions",
+															"value": "[object Object]"
+														}
+													],
+													"variable": [
+														{
+															"key": "productId"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "6c43258c-9c38-4350-b4da-7b54594240e1"
+						},
+						{
+							"name": "به روش آسنکرون، اطلاعات نمایشی محصول مشخص شده با شناسه دیتابیسی را خوانده و برمی گرداند",
+							"id": "557b3fb1-c1c4-447c-aab6-a6c9e4bec869",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/products/:productId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"products",
+										":productId"
+									],
+									"variable": [
+										{
+											"key": "productId",
+											"value": "<integer>",
+											"description": "(Required) شناسه دیتابیسی محصول مورد نظر"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "da7b9dd8-43b2-45d5-8793-be83ac15ce4d",
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/products/:productId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"products",
+												":productId"
+											],
+											"variable": [
+												{
+													"key": "productId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "به روش آسنکرون، اطلاعات نمایشی اصلاح شده برای یک محصول موجود را پس از اعتبارسنجی در دیتابیس ذخیره می کند",
+							"id": "123419fa-bc89-42ae-894a-b9a166ff3fcc",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"enName\": \"<string>\",\n  \"code\": \"<string>\",\n  \"shortDescription\": \"<string>\",\n  \"description\": \"<string>\",\n  \"type\": \"<integer>\",\n  \"branchScope\": \"<integer>\",\n  \"createdById\": \"<integer>\",\n  \"modifiedById\": \"<integer>\",\n  \"createdByName\": \"<string>\",\n  \"modifiedByName\": \"<string>\",\n  \"createdDate\": \"<dateTime>\",\n  \"state\": \"<string>\",\n  \"fiscalPeriodId\": \"<integer>\",\n  \"branchId\": \"<integer>\",\n  \"fiscalPeriodName\": \"<string>\",\n  \"branchName\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/products/:productId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"products",
+										":productId"
+									],
+									"variable": [
+										{
+											"key": "productId",
+											"value": "<integer>",
+											"description": "(Required) شناسه دیتابیسی محصول اصلاح شده"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "3320a836-9ffa-416c-b8e1-8ace6ba82067",
+									"name": "Success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"enName\": \"<string>\",\n  \"code\": \"<string>\",\n  \"shortDescription\": \"<string>\",\n  \"description\": \"<string>\",\n  \"type\": \"<integer>\",\n  \"branchScope\": \"<integer>\",\n  \"createdById\": \"<integer>\",\n  \"modifiedById\": \"<integer>\",\n  \"createdByName\": \"<string>\",\n  \"modifiedByName\": \"<string>\",\n  \"createdDate\": \"<dateTime>\",\n  \"state\": \"<string>\",\n  \"fiscalPeriodId\": \"<integer>\",\n  \"branchId\": \"<integer>\",\n  \"fiscalPeriodName\": \"<string>\",\n  \"branchName\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/products/:productId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"products",
+												":productId"
+											],
+											"variable": [
+												{
+													"key": "productId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "به روش آسنکرون، اطلاعات محصول مشخص شده با شناسه دیتابیسی را پس از اعتبارسنجی از دیتابیس حذف می کند",
+							"id": "0962259c-ff2b-4ad9-9a16-70fc64e7cd36",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/products/:productId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"products",
+										":productId"
+									],
+									"variable": [
+										{
+											"key": "productId",
+											"value": "<integer>",
+											"description": "(Required) شناسه دیتابیسی محصول مورد نظر برای حذف"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "78b5621e-9ec6-4bf7-93d1-8e69b20a16a5",
+									"name": "Success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/products/:productId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"products",
+												":productId"
+											],
+											"variable": [
+												{
+													"key": "productId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"id": "ed9059d9-4b74-4d6f-96f0-0a06dab554fe"
+				},
+				{
+					"name": "count",
+					"item": [
+						{
+							"name": "به روش آسنکرون، تعداد کل محصولها را برمی گرداند",
+							"id": "b78d34d2-837f-4fe1-84aa-9f0f4a023432",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/products/count",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"products",
+										"count"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "54712970-16cc-42d9-89da-087a00d3e874",
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/products/count",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"products",
+												"count"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"id": "66428cd3-1c06-4d36-a59e-663dbd063020"
+				},
+				{
+					"name": "{categoryId}",
+					"item": [
+						{
+							"name": "deactivate",
+							"item": [
+								{
+									"name": "به روش آسنکرون، محصول مشخص شده با شناسه دیتابیسی را غیرفعال می کند",
+									"id": "6a93f5c5-c5b8-4460-812d-76e8c665a4a1",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/products/:categoryId/deactivate?productId=<integer>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"products",
+												":categoryId",
+												"deactivate"
+											],
+											"query": [
+												{
+													"description": "شناسه دیتابیسی محصول مورد نظر برای غیرفعال کردن",
+													"key": "productId",
+													"value": "<integer>"
+												}
+											],
+											"variable": [
+												{
+													"key": "categoryId",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "6b58b1ad-af58-4d87-8904-f2bdfe406753",
+											"name": "Success",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/products/:categoryId/deactivate?productId=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"products",
+														":categoryId",
+														"deactivate"
+													],
+													"query": [
+														{
+															"description": "شناسه دیتابیسی محصول مورد نظر برای غیرفعال کردن",
+															"key": "productId",
+															"value": "<integer>"
+														}
+													],
+													"variable": [
+														{
+															"key": "categoryId"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "18427ddb-aa42-45c6-8754-029dcf709c56"
+						},
+						{
+							"name": "reactivate",
+							"item": [
+								{
+									"name": "به روش آسنکرون، محصول مشخص شده با شناسه دیتابیسی را فعال می کند",
+									"id": "0595c221-aab0-432b-a2cf-6643d287a980",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/products/:categoryId/reactivate?productId=<integer>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"products",
+												":categoryId",
+												"reactivate"
+											],
+											"query": [
+												{
+													"description": "شناسه دیتابیسی محصول مورد نظر برای فعال کردن",
+													"key": "productId",
+													"value": "<integer>"
+												}
+											],
+											"variable": [
+												{
+													"key": "categoryId",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "74e33abc-30e5-4866-990b-93b837e86ebd",
+											"name": "Success",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/products/:categoryId/reactivate?productId=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"products",
+														":categoryId",
+														"reactivate"
+													],
+													"query": [
+														{
+															"description": "شناسه دیتابیسی محصول مورد نظر برای فعال کردن",
+															"key": "productId",
+															"value": "<integer>"
+														}
+													],
+													"variable": [
+														{
+															"key": "categoryId"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "3197f70a-1eae-485c-8fdb-8dfd53b6d392"
+						}
+					],
+					"id": "45c0e96c-78f2-4f08-b207-e00427acf313"
+				},
+				{
+					"name": "به روش آسنکرون، اطلاعات صفحه بندی شده محصولات را خوانده و برمی گرداند",
+					"id": "5c63c7ad-665d-41bc-b0bb-c06abbf06dcd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/products",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "3f86e92e-cc3f-4d31-9983-0790f38c89e1",
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/products",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "به روش آسنکرون، اطلاعات نمایشی یک محصول جدید را پس از اعتبارسنجی در دیتابیس ذخیره می کند",
+					"id": "26ea03e2-f433-49cc-839c-6d90c7269e27",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"enName\": \"<string>\",\n  \"code\": \"<string>\",\n  \"shortDescription\": \"<string>\",\n  \"description\": \"<string>\",\n  \"type\": \"<integer>\",\n  \"branchScope\": \"<integer>\",\n  \"createdById\": \"<integer>\",\n  \"modifiedById\": \"<integer>\",\n  \"createdByName\": \"<string>\",\n  \"modifiedByName\": \"<string>\",\n  \"createdDate\": \"<dateTime>\",\n  \"state\": \"<string>\",\n  \"fiscalPeriodId\": \"<integer>\",\n  \"branchId\": \"<integer>\",\n  \"fiscalPeriodName\": \"<string>\",\n  \"branchName\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/products",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "f33592dd-0966-4b32-ac41-976a87d47a73",
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"<string>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"enName\": \"<string>\",\n  \"code\": \"<string>\",\n  \"shortDescription\": \"<string>\",\n  \"description\": \"<string>\",\n  \"type\": \"<integer>\",\n  \"branchScope\": \"<integer>\",\n  \"createdById\": \"<integer>\",\n  \"modifiedById\": \"<integer>\",\n  \"createdByName\": \"<string>\",\n  \"modifiedByName\": \"<string>\",\n  \"createdDate\": \"<dateTime>\",\n  \"state\": \"<string>\",\n  \"fiscalPeriodId\": \"<integer>\",\n  \"branchId\": \"<integer>\",\n  \"fiscalPeriodName\": \"<string>\",\n  \"branchName\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/products",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "به روش آسنکرون، محصولات داده شده را - در صورت امکان - حذف می کند",
+					"id": "8cac363d-22bf-4665-8c4d-7a9e7e16c02e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"paraph\": \"<string>\",\n  \"items\": [\n    \"<integer>\",\n    \"<integer>\"\n  ]\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/products",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "a2c600c4-f9db-4cd9-a9c5-97116d1dff79",
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"paraph\": \"<string>\",\n  \"items\": [\n    \"<integer>\",\n    \"<integer>\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/products",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			],
+			"id": "74216775-ea32-4f3c-8f2b-d1adc6e957f7"
+		},
+		{
+			"name": "productunits",
+			"item": [
+				{
+					"name": "به روش آسنکرون، اطلاعات صفحه بندی شده واحدهای محصول را خوانده و برمی گرداند",
+					"id": "176190f9-0545-4634-b03d-3d7b78ff29d0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/productunits",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"productunits"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "1be34eaf-9b6b-4565-9ab9-a80474b13330",
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/productunits",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"productunits"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "به روش آسنکرون، اطلاعات نمایشی یک واحد محصول جدید را پس از اعتبارسنجی در دیتابیس ذخیره می کند",
+					"id": "f94c6d52-2c93-46cf-b619-751a15ceda52",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"pieces\": \"<double>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"isBase\": \"<boolean>\",\n  \"title\": \"<string>\",\n  \"height\": \"<double>\",\n  \"width\": \"<double>\",\n  \"length\": \"<double>\",\n  \"volume\": \"<double>\",\n  \"area\": \"<double>\",\n  \"weight\": \"<double>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/productunits",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"productunits"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "66d87c11-c000-4855-8689-4b9ddf721ef9",
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"pieces\": \"<double>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"isBase\": \"<boolean>\",\n  \"title\": \"<string>\",\n  \"height\": \"<double>\",\n  \"width\": \"<double>\",\n  \"length\": \"<double>\",\n  \"volume\": \"<double>\",\n  \"area\": \"<double>\",\n  \"weight\": \"<double>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/productunits",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"productunits"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "به روش آسنکرون، واحدهای محصول داده شده را - در صورت امکان - حذف می کند",
+					"id": "fe3467d2-8135-4918-937b-cea865383afe",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"paraph\": \"<string>\",\n  \"items\": [\n    \"<integer>\",\n    \"<integer>\"\n  ]\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/productunits",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"productunits"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "720d02f9-312b-4c2f-b8fc-a4c1e516d583",
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"paraph\": \"<string>\",\n  \"items\": [\n    \"<integer>\",\n    \"<integer>\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/productunits",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"productunits"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			],
+			"id": "490c6550-02e4-4cd8-a91e-0d487a43a8eb"
+		},
+		{
+			"name": "productUnits",
+			"item": [
+				{
+					"name": "{productUnitId}",
+					"item": [
+						{
+							"name": "به روش آسنکرون، اطلاعات نمایشی واحد محصول مشخص شده با شناسه دیتابیسی را خوانده و برمی گرداند",
+							"id": "b6806daa-8161-4324-93b4-a2a7716a5b32",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/productUnits/:productUnitId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"productUnits",
+										":productUnitId"
+									],
+									"variable": [
+										{
+											"key": "productUnitId"
+										},
+										{
+											"key": "productunitId",
+											"value": "<integer>",
+											"description": "(Required) شناسه دیتابیسی واحد محصول مورد نظر"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "6448f28d-e141-4a11-8331-c9b9b972a46b",
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/productUnits/:productUnitId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"productUnits",
+												":productUnitId"
+											],
+											"variable": [
+												{
+													"key": "productUnitId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "به روش آسنکرون، اطلاعات نمایشی اصلاح شده برای یک واحد محصول موجود را پس از اعتبارسنجی در دیتابیس ذخیره می کند",
+							"id": "64effd2e-86b9-48b0-b95b-6f06791e1ff0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"pieces\": \"<double>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"isBase\": \"<boolean>\",\n  \"title\": \"<string>\",\n  \"height\": \"<double>\",\n  \"width\": \"<double>\",\n  \"length\": \"<double>\",\n  \"volume\": \"<double>\",\n  \"area\": \"<double>\",\n  \"weight\": \"<double>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/productUnits/:productUnitId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"productUnits",
+										":productUnitId"
+									],
+									"variable": [
+										{
+											"key": "productUnitId"
+										},
+										{
+											"key": "productunitId",
+											"value": "<integer>",
+											"description": "(Required) شناسه دیتابیسی واحد محصول اصلاح شده"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "e91a34de-1639-4893-9fb6-433c5e68b02d",
+									"name": "Success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"pieces\": \"<double>\",\n  \"rowNo\": \"<integer>\",\n  \"id\": \"<integer>\",\n  \"rowGuid\": \"<uuid>\",\n  \"modifiedDate\": \"<dateTime>\",\n  \"isBase\": \"<boolean>\",\n  \"title\": \"<string>\",\n  \"height\": \"<double>\",\n  \"width\": \"<double>\",\n  \"length\": \"<double>\",\n  \"volume\": \"<double>\",\n  \"area\": \"<double>\",\n  \"weight\": \"<double>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/productUnits/:productUnitId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"productUnits",
+												":productUnitId"
+											],
+											"variable": [
+												{
+													"key": "productUnitId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "به روش آسنکرون، اطلاعات واحد محصول مشخص شده با شناسه دیتابیسی را پس از اعتبارسنجی از دیتابیس حذف می کند",
+							"id": "00c769f7-f94b-4e20-9679-e4bea70ae718",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/productUnits/:productUnitId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"productUnits",
+										":productUnitId"
+									],
+									"variable": [
+										{
+											"key": "productUnitId"
+										},
+										{
+											"key": "productunitId",
+											"value": "<integer>",
+											"description": "(Required) شناسه دیتابیسی واحد محصول مورد نظر برای حذف"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "c0e0ff29-5a91-49b0-86c4-47eff755c8b0",
+									"name": "Success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/productUnits/:productUnitId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"productUnits",
+												":productUnitId"
+											],
+											"variable": [
+												{
+													"key": "productUnitId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"id": "9383df58-5a3a-484b-9202-100b632be69b"
+				}
+			],
+			"id": "2e166dcc-ebea-4f64-9954-1bd691b9baf4"
+		},
+		{
 			"name": "profit-loss",
 			"item": [
 				{
