@@ -9,6 +9,7 @@ id = 1d7b82cc-f1f9-4508-a9a7-2b580e3bab69
 
 [config.relations.collections]
 rootDirectory = postman/collections
+files[] = {"id":"25682955-3cfa377a-845d-438d-ba23-11bb1f00a24c","path":"Tadbir Api Copy 2.json","metaData":{}}
 files[] = {"id":"25767372-50f201bd-0769-4197-aca2-155b8c378e2a","path":"Tadbir Api.json","metaData":{"generateCollectionPreferences":"{\"folderStrategy\":\"Paths\",\"includeDeprecated\":true,\"includeAuthInfoInExample\":true,\"enableOptionalParameters\":true,\"keepImplicitHeaders\":false,\"requestNameSource\":\"Fallback\",\"indentCharacter\":\"Space\",\"requestParametersResolution\":\"Example\",\"exampleParametersResolution\":\"Example\",\"collapseFolders\":true,\"optimizeConversion\":true}"}}
 
 [config.relations.collections.metaData]
