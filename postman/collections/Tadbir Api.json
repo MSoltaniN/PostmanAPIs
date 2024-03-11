@@ -33857,107 +33857,31 @@
 									},
 									"request": {
 										"method": "POST",
-										"header": [],
+										"header": [
+											{
+												"key": "X-Tadbir-License",
+												"value": "XLJFC3hN5A8fjsAZDYOkRVvLIRT2mIUKWUa+lA6RNG+BIgPUvRmcWm/W/JscG4inz/ZNOMo16yZFf2MQ/+43LkNg7GQR7Mq3ErddilIAcKm7ejhFH5tLl6dC0tJaWWLgwFkenJpqqW05UsQ7grV6jIjhOK06rO1U2H77cuB1fH9sVri6q51VJM6RJTVLUPTNGor3PJlozcjsu1cC/HcBU5lqj27uFI2NFckcPH0GSAAJHf3Df45LPHenFOZ2o0NtqnNjsQIVOCI5cO5Ha5sxwAMGJGhe89HpGr5eLJ200E2HtlE+TjX2nlP08EIWpqYBEQpzq8IziV2uNSsgcTwc0A==",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"categoryIds\":[1,2,3]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
 										"url": {
-											"raw": "{{baseUrl}}/products/:productId/assigncategories?categoryIds=<integer>&categoryIds=<integer>&companyConnection=<string>&userContext.id=<integer>&userContext.userName=<string>&userContext.personFullName=<string>&userContext.connection=<string>&userContext.companyId=<integer>&userContext.branchId=<integer>&userContext.fiscalPeriodId=<integer>&userContext.companyName=<string>&userContext.branchName=<string>&userContext.fiscalPeriodName=<string>&userContext.inventoryMode=<integer>&userContext.lastLoginDate=<dateTime>&userContext.language=<string>&userContext.roles=<integer>&userContext.roles=<integer>&userContext.permissions=[object Object]&userContext.permissions=[object Object]",
+											"raw": "{{baseUrl}}/products/6/assigncategories",
 											"host": [
 												"{{baseUrl}}"
 											],
 											"path": [
 												"products",
-												":productId",
+												"6",
 												"assigncategories"
-											],
-											"query": [
-												{
-													"description": "دسته بندیهای انتخاب شده برای تحصیص به محصول",
-													"key": "categoryIds",
-													"value": "<integer>"
-												},
-												{
-													"description": "دسته بندیهای انتخاب شده برای تحصیص به محصول",
-													"key": "categoryIds",
-													"value": "<integer>"
-												},
-												{
-													"key": "companyConnection",
-													"value": "<string>"
-												},
-												{
-													"key": "userContext.id",
-													"value": "<integer>"
-												},
-												{
-													"key": "userContext.userName",
-													"value": "<string>"
-												},
-												{
-													"key": "userContext.personFullName",
-													"value": "<string>"
-												},
-												{
-													"key": "userContext.connection",
-													"value": "<string>"
-												},
-												{
-													"key": "userContext.companyId",
-													"value": "<integer>"
-												},
-												{
-													"key": "userContext.branchId",
-													"value": "<integer>"
-												},
-												{
-													"key": "userContext.fiscalPeriodId",
-													"value": "<integer>"
-												},
-												{
-													"key": "userContext.companyName",
-													"value": "<string>"
-												},
-												{
-													"key": "userContext.branchName",
-													"value": "<string>"
-												},
-												{
-													"key": "userContext.fiscalPeriodName",
-													"value": "<string>"
-												},
-												{
-													"key": "userContext.inventoryMode",
-													"value": "<integer>"
-												},
-												{
-													"key": "userContext.lastLoginDate",
-													"value": "<dateTime>"
-												},
-												{
-													"key": "userContext.language",
-													"value": "<string>"
-												},
-												{
-													"key": "userContext.roles",
-													"value": "<integer>"
-												},
-												{
-													"key": "userContext.roles",
-													"value": "<integer>"
-												},
-												{
-													"key": "userContext.permissions",
-													"value": "[object Object]"
-												},
-												{
-													"key": "userContext.permissions",
-													"value": "[object Object]"
-												}
-											],
-											"variable": [
-												{
-													"key": "productId",
-													"value": "<integer>",
-													"description": "(Required) شماره شناسه دیتابیسی محصول"
-												}
 											]
 										}
 									},
@@ -50162,7 +50086,7 @@
 		"apikey": [
 			{
 				"key": "value",
-				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZ2l2ZW5fbmFtZSI6Itix2KfZh9io2LEg2LPbjNiz2KrZhSIsIlRhZGJpckNvbnRleHQiOnsiSWQiOjEsIlVzZXJOYW1lIjoiYWRtaW4iLCJQZXJzb25GdWxsTmFtZSI6Itix2KfZh9io2LEg2LPbjNiz2KrZhSIsIkNvbm5lY3Rpb24iOiJWcjBldDVPVndrbnlqUFRRR0hLUnlTTGMyY1FOb2V0TWNyQW0zcmt0Mk1HSVNKM0F0OWdnenJqM3dhNXdvRlNENkhsTUtxSGxrc2Zidytya1AyWWd1cTBVdXQrWGYrd0IxSEpYS3VmZEhVTTdnV1RqbFIrWVB6c0FQY1JaNkVnbjl2S1NnSUg0MlU3YW0wVEE5NlNiRjlhdWY3cWoreTJHZUd0NWhDdEdMWTFkRlViZ3FqS0RwVzZDV1RvYndJQ0cvWitjdzBUQVlUN3ZJdktjQkkrSC9wWnB4WEo0RUdRYnovL1RNemU3RDlkZjN0SXljdVZXcUg2WHh6cVByT0w5Vzl3YXVraFJYbmFUK2JPL3BNQkIyQT09IiwiQ29tcGFueUlkIjoyLCJCcmFuY2hJZCI6MiwiRmlzY2FsUGVyaW9kSWQiOjIsIkNvbXBhbnlOYW1lIjoi2LTYsdqp2Kog2KzYr9uM2K8iLCJCcmFuY2hOYW1lIjoi2K_Zgdiq2LEg2YXYsdqp2LLbjCIsIkZpc2NhbFBlcmlvZE5hbWUiOiLYr9mI2LHZhyDZhdin2YTbjCAxNDAyIiwiSW52ZW50b3J5TW9kZSI6MSwiTGFzdExvZ2luRGF0ZSI6IjIwMjQtMDItMjZUMTQ6MDA6NTUuNTUzIiwiTGFuZ3VhZ2UiOiJmYSIsIlJvbGVzIjpbMV0sIlBlcm1pc3Npb25zIjpbXX0sIm5iZiI6MTcwOTAzNjY2MywiZXhwIjoxNzA5NjQxNDYzLCJpYXQiOjE3MDkwMzY2NjMsImlzcyI6InRhZGJpci1hcGkiLCJhdWQiOiJ0YWRiaXItYXBwIn0.8GzmXSofYkQLlh0_uUogzo-myv_HPNwjHotQ_cE6fGo",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwiZ2l2ZW5fbmFtZSI6Itix2KfZh9io2LEg2LPbjNiz2KrZhSIsIlRhZGJpckNvbnRleHQiOnsiSWQiOjEsIlVzZXJOYW1lIjoiYWRtaW4iLCJQZXJzb25GdWxsTmFtZSI6Itix2KfZh9io2LEg2LPbjNiz2KrZhSIsIkNvbm5lY3Rpb24iOiJpTjhBaHJhakQrdDRzMDBpNHZHc3Z3V0Q0Um5FRGE5L2JCeS95YWZSVkFOemthdVlkVUZIQWgyeEZqY0daTUdmNlFjcVphNmNXUSsyTGdOdG9ZYlhjenIzV2F4M24zWDFNRWd3eG9MSmhGbjVVUFRubFNraldTS0dFaFl5WUIrS0VxeURhOXMyajZUK3VnWHhsRmVrbHBaSGJ4bURlRXdibGtBbE90bHNjRmd1UVpYZmliRlArNDhzVTZGQjVXVWlOOStCR1RNaXlpVnRpMk5mRXZCSTFycUJEQjM2VWh5VEpRbTRYZmQ4ZnJUbVhqUnJGU1RMQU85OUFha3IyNXBlUGVielpVQTlhTGQyUGZnMzlCL01GQT09IiwiQ29tcGFueUlkIjoyLCJCcmFuY2hJZCI6MiwiRmlzY2FsUGVyaW9kSWQiOjIsIkNvbXBhbnlOYW1lIjoi2LTYsdqp2Kog2KzYr9uM2K8iLCJCcmFuY2hOYW1lIjoi2K_Zgdiq2LEg2YXYsdqp2LLbjCIsIkZpc2NhbFBlcmlvZE5hbWUiOiLYr9mI2LHZhyDZhdin2YTbjCAxNDAyIiwiSW52ZW50b3J5TW9kZSI6MSwiTGFzdExvZ2luRGF0ZSI6IjIwMjQtMDMtMDlUMTE6NDE6NDAuMzczIiwiTGFuZ3VhZ2UiOiJmYSIsIlJvbGVzIjpbMV0sIlBlcm1pc3Npb25zIjpbXX0sIm5iZiI6MTcwOTk5NDYyNCwiZXhwIjoxNzEwNTk5NDI0LCJpYXQiOjE3MDk5OTQ2MjQsImlzcyI6InRhZGJpci1hcGkiLCJhdWQiOiJ0YWRiaXItYXBwIn0.qAT_7NKh7KSXx03cLKLRlOC1Qh-qAKhnqZsEbLgG7N4",
 				"type": "string"
 			},
 			{
@@ -50176,7 +50100,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "c7343531-2221-4414-bb5d-0ffc1ee4ddc0",
+				"id": "3f194af6-f6ac-4f97-9ef6-0200999cdd33",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -50186,7 +50110,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "8f8517aa-fb47-490e-9885-e8162925b1e1",
+				"id": "5305710e-9406-45fb-ab9d-2186ce70afe9",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -50196,7 +50120,7 @@
 	],
 	"variable": [
 		{
-			"id": "38bddc21-3a10-493a-a313-865d3ffc5fba",
+			"id": "0c540d5a-b16d-4814-8314-df1f9a4769ea",
 			"key": "baseUrl",
 			"value": "http://localhost:9995"
 		}
