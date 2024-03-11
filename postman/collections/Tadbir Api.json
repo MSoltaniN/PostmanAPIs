@@ -34203,6 +34203,59 @@
 					"id": "ed9059d9-4b74-4d6f-96f0-0a06dab554fe"
 				},
 				{
+					"name": "grouped-properties",
+					"item": [
+						{
+							"name": "به روش آسنکرون، اطلاعات ویژگی های فعال به تفکیک گروه ویژگی محصول را برای ابزار رندر داینامیک فرم formly",
+							"id": "4fc8679f-6cfb-4f0a-b014-96d895c981be",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/products/grouped-properties",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"products",
+										"grouped-properties"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "76e50e6b-7b39-40ab-9ff4-acf4ef048e56",
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/products/grouped-properties",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"products",
+												"grouped-properties"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"id": "391623d2-58a7-4a60-a04a-12c189ee26a9"
+				},
+				{
 					"name": "count",
 					"item": [
 						{
